@@ -1,0 +1,33 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: block;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1270px;
+  margin: 0 auto;
+
+  @media (max-width: 1310px) {
+    padding: 0px 20px;
+  }
+}
+
+.section {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+  z-index: 2;
+  &.visible {
+    overflow: visible;
+  }
+}

@@ -1,0 +1,47 @@
+:root {
+  --2: 'circerounded-regular2', sans-serif;
+  --3: 'circerounded-regular3', sans-serif;
+  --4: 'circerounded-regular4', sans-serif;
+  --5: 'circerounded-regular5', sans-serif;
+  --400: 'montserrat-regular', sans-serif;
+  --500: 'montserrat-medium', sans-serif;
+
+  --bg: #cc0102;
+  --bg-dark: #b60003;
+  --yellow: #ffe26b;
+  --yellow-light: #e6d689;
+  --color: #ffffff;
+  --gradient: linear-gradient(90deg, #ffe680 0%, #fab041 50%, #ffe680 100%);
+  --white: #ffffff;
+  --black: #000000;
+  --red: #b7142b;
+  --invalid: #e6d689;
+
+  --vh: 1vh;
+}
+
+@import 'mixins';
+@import 'fonts';
+@import 'animations';
+@import 'preloader';
+@import 'reset';
+@import 'main';
+@import 'swiper';
+@import 'header';
+@import 'buttons';
+@import 'typography';
+@import 'accordeons';
+@import 'tabs';
+@import 'memory';
+@import 'forms';
+@import 'footer';
+@import 'popup';
+@import 'section__hero';
+@import 'section__about';
+@import 'section__mainprize';
+@import 'section__weekprizes';
+@import 'secsion__garanty';
+@import 'section__winners';
+@import 'section__lk';
+@import 'section__memory';
+@import 'dropzone';

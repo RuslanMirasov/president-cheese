@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <meta name="theme-color" content="#CC0102" />
+    <meta name="description" content="President" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/dropzone.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    <title>President</title>
+  </head>
+
+  <body class="body">
+    <!--PRELOADER-->
+    <div class="preloader" data-preloader>
+      <span>
+        <img src="./assets/img/svg/logo.svg" alt="President" />
+      </span>
+    </div>
+
+    <!--HEADER-->
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href="./" class="logo" aria-label="President">
+            <img src="./assets/img/svg/logo.svg" alt="President" width="80" height="66" loading="eager" />
+          </a>
+        </div>
+
+        <nav class="navigation">
+          <ul class="menu">
+            <li><a class="menu__link" data-popup-open="memory">Игра</a></li>
+            <li><a href="./" class="menu__link">Благородные сыры</a></li>
+            <li><a class="menu__link" data-popup-open="production">Продукция</a></li>
+            <li><a class="menu__link" data-popup-open="faq">Частые вопросы</a></li>
+            <li class="header__buttons">
+              <button class="button button--small" data-popup-open="cheque"><span>Загрузить чек</span></button>
+              <button class="login-btn" data-popup-open="login"><span>Вход</span></button>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger">
+          <span>Меню бургер</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--HERO-->
+      <section class="section section--hero">
+        <div class="hero-background" data-fix-bg>
+          <img src="./assets/img/hero-bg.webp" alt="" />
+        </div>
+
+        <div class="container">
+          <h1 class="title title--hero">
+            <span>Твоё <span class="underline">настоящее</span></span>
+            <span>удовольствие</span>
+          </h1>
+
+          <div class="main-prize">
+            <span>Главный приз</span>
+            <p>Выбери своё <br />путешествие</p>
+          </div>
+
+          <img src="./assets/img/hero-center-image.webp" alt="" class="hero-center-image" />
+        </div>
+      </section>
+
+      <section class="section section--chees">
+        <div class="container">
+          <div class="hero-chees">
+            <img src="./assets/img/hero-chees.webp" alt="" />
+            <div class="effect"></div>
+          </div>
+          <a href="#about" data-scrollto class="scroll-down"></a>
+        </div>
+      </section>
+
+      <!--ABOUT-->
+      <section class="section section--about" id="about">
+        <div class="container">
+          <ul class="numbered-list about-list">
+            <li>
+              <h3 class="title title--h3">Покупай</h3>
+              <p>сыр с&nbsp;благородной <br />плесенью President</p>
+            </li>
+            <li>
+              <h3 class="title title--h3">ЗАРЕГИСТРИРУЙ</h3>
+              <p>
+                чек на&nbsp;сайте и&nbsp;получи <br />гарантированный приз
+                <span class="yandex-small">
+                  <img src="./assets/img/yandex-small.webp" alt="" />
+                  <span class="blik blik--yandex"></span>
+                </span>
+              </p>
+              <button class="button" data-popup-open="cheque"><span>ЗАГРУЗИТЬ ЧЕК</span></button>
+            </li>
+            <li>
+              <h3 class="title title--h3">Участвуй <br />в&nbsp;розыгрыше <br />призов</h3>
+              <p>для&nbsp;твоего удовольствия</p>
+            </li>
+            <li>
+              <h3 class="title title--h3">Играй в&nbsp;игру <br />Мемори</h3>
+              <p>и&nbsp;участвуй в&nbsp;розыгрыше <br />специального приза</p>
+              <button class="button" data-popup-open="memory"><span>ИГРАТЬ</span></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--MAIN PRIZ-->
+      <div class="border border-top"></div>
+      <section class="section section--mainprize" data-fixed-bg>
+        <div class="fixed-bg"></div>
+        <div class="container">
+          <h2 class="title">
+            <span>Главный приз</span>
+            путешествие в&nbsp;своё удовольствие!
+          </h2>
+
+          <p class="mainprize"><span>500 000₽</span></p>
+        </div>
+      </section>
+      <div class="border border-bottom"></div>
+
+      <!--WEEK PRIZES-->
+      <section
+        class="section section--weekprize"
+        data-slider
+        data-slides-per-view="3,3,1"
+        data-slides-per-group="4,1,1"
+        data-space-between="24,20,20"
+        data-centered="true"
+        data-initial-slide="1,1,0"
+      >
+        <div class="container">
+          <div class="titleBox">
+            <h2 class="title title--h2 yellow">Еженедельные призы</h2>
+            <h2 class="title title--h3">Выбирай категорию и выигрывай призы!</h2>
+          </div>
+
+          <div class="swiper swiper--weekprize">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="weekprize">
+                  <h3 class="title title--h3 yellow">Отдых&nbsp;и&nbsp;релакс</h3>
+                  <img src="./assets/img/prizes/otello.webp" alt="otello" />
+                  <p>Сертификат Оттелло</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="weekprize">
+                  <h3 class="title title--h3 yellow">Дом&nbsp;и&nbsp;уют</h3>
+                  <img src="./assets/img/prizes/cozy-home.webp" alt="cozy-home" />
+                  <p>Сертификат Cozy Home</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="weekprize">
+                  <h3 class="title title--h3 yellow">Техника&nbsp;и&nbsp;гаджеты</h3>
+                  <img src="./assets/img/prizes/m-video.webp" alt="m-video" />
+                  <p>Сертификат М.Видео</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="weekprize">
+                  <h3 class="title title--h3 yellow">Отдых&nbsp;и&nbsp;релакс</h3>
+                  <img src="./assets/img/prizes/cuva.webp" alt="cuva" />
+                  <p>Сертификат Cuva</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="weekprize">
+                  <h3 class="title title--h3 yellow">Дом&nbsp;и&nbsp;уют</h3>
+                  <img src="./assets/img/prizes/hoff.webp" alt="hoff" />
+                  <p>Сертификат Hoff</p>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="weekprize">
+                  <h3 class="title title--h3 yellow">Техника&nbsp;и&nbsp;гаджеты</h3>
+                  <img src="./assets/img/prizes/m-video-15000.webp" alt="m-video" />
+                  <p>Сертификат М.Видео</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="swiper-arrow" data-arrow-prev></button>
+            <button class="swiper-arrow" data-arrow-next></button>
+          </div>
+
+          <ul class="ozone-prizes">
+            <li>
+              <article class="weekprize">
+                <span class="yellow"> Зарегистрируй 2 чека в&nbsp;неделю и участвуй в&nbsp;розыгрыше сертификата на&nbsp;OZON 20&nbsp;000р. </span>
+                <div class="weekprize__image">
+                  <img src="./assets/img/prizes/ozon-20000.webp" alt="ozon" />
+                  <span class="blik"></span>
+                </div>
+                <p>Сертификат Ozon</p>
+              </article>
+            </li>
+            <li>
+              <article class="weekprize">
+                <span class="yellow"> Зарегистрируй 3 чека в&nbsp;неделю и участвуй в&nbsp;розыгрыше сертификата на&nbsp;OZON 30&nbsp;000р. </span>
+                <div class="weekprize__image">
+                  <img src="./assets/img/prizes/ozon-30000.webp" alt="ozon" />
+                  <span class="blik"></span>
+                </div>
+                <p>Сертификат Ozon</p>
+              </article>
+            </li>
+          </ul>
+
+          <ul class="garanty-prizes">
+            <li>
+              <h2 class="title title--h2 yellow">Гарантированный приз</h2>
+              <article>
+                <div class="image">
+                  <span class="yandex-big">
+                    <img src="./assets/img/yandex-big.webp" alt="" />
+                    <span class="blik blik--yandex"></span>
+                  </span>
+                </div>
+                <p>Баллы Яндекс Плюс <span>за&nbsp;загрузку чеков</span></p>
+                <button class="button" data-popup-open="cheque"><span>ЗАГРУЗИТЬ ЧЕК</span></button>
+              </article>
+            </li>
+            <li>
+              <h2 class="title title--h2 yellow">Ежедневный приз</h2>
+              <article>
+                <div class="image">
+                  <span class="ozon-big">
+                    <img src="./assets/img/ozon-big.webp" alt="" />
+                    <span class="blik blik--ozon"></span>
+                  </span>
+                </div>
+                <p>500&nbsp;₽ на&nbsp;Ozon <span>за&nbsp;прохождение игры</span></p>
+                <button class="button" data-popup-open="memory"><span>ИГРАТЬ</span></button>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--PRODUCTS-->
+      <section
+        class="section section--garanty border-top-red"
+        data-slider
+        data-slides-per-view="3,2,1"
+        data-slides-per-group="1,1,1"
+        data-space-between="0,0,0"
+        data-initial-slide="0,0,0"
+        data-loop="true"
+      >
+        <div class="container">
+          <h2 class="title title--h2 yellow">Продукты, участвующие в&nbsp;акции</h2>
+
+          <div class="swiper swiper--products">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/1.webp" alt="President" width="192" />
+                </div>
+                <h3>Brie</h3>
+                <p>Классический сыр&nbsp;с&nbsp;благородной плесенью, знаменитый своей бархатистой корочкой и&nbsp;глубоким сливочным вкусом</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/2.webp" alt="President" width="264" />
+                </div>
+                <h3>Camembert</h3>
+                <p>Легендарный сыр с&nbsp;нежной сердцевиной и&nbsp;пикантным вусом тонкой бархатистой корочки</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/3.webp" alt="President" width="302" />
+                </div>
+                <h3>Le Cremiot Extra Fondant</h3>
+                <p>Сыр&nbsp;с&nbsp;нежнейшей кремовой текстурой, который буквально тает во&nbsp;рту.</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/4.webp" alt="President" width="146" />
+                </div>
+                <h3>Snack France</h3>
+                <p>Уникальный насыщенный вкус с&nbsp;пикантными дымными нотками и&nbsp;сливочным послевкусием</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/5.webp" alt="President" width="244" />
+                </div>
+                <h3>Petit Brie</h3>
+                <p>Классический сыр&nbsp;с&nbsp;благородной плесенью, знаменитый своей бархатистой корочкой</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/6.webp" alt="President" width="325" />
+                </div>
+                <h3>Lingot</h3>
+                <p>Сыр с&nbsp;белой корочкой, идеально подойдёт для сэндвичей</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/7.webp" alt="President" width="226" />
+                </div>
+                <h3>Camembert Grill</h3>
+                <p>Легендарный сыр с&nbsp;нежной сердцевиной и&nbsp;пикантным вусом тонкой бархатистой корочки</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/8.webp" alt="President" width="326" />
+                </div>
+                <h3>Brie</h3>
+                <p>Классический сыр&nbsp;с&nbsp;благородной плесенью, знаменитый своей бархатистой корочкой</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/9.webp" alt="President" width="300" />
+                </div>
+                <h3>Royal Blue</h3>
+                <p>
+                  Сыр&nbsp;с&nbsp;голубой плесенью и&nbsp;уникальным вкусом, который достигается благодаря длинному сроку созревания
+                  (до&nbsp;90&nbsp;дней)
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/10.webp" alt="President" width="260" />
+                </div>
+                <h3>Royal Blue</h3>
+                <p>
+                  Сыр&nbsp;с&nbsp;голубой плесенью и&nbsp;уникальным вкусом, который достигается благодаря длинному сроку созревания
+                  (до&nbsp;90&nbsp;дней)
+                </p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/11.webp" alt="President" width="300" />
+                </div>
+                <h3>La Brique</h3>
+                <p>Тонкая корочка, текучая текстура и&nbsp;бесподобный вкус с&nbsp;прятными нотками тёплого молока и&nbsp;фундка</p>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="./assets/img/products/12.webp" alt="President" width="200" />
+                </div>
+                <h3>Red Snack</h3>
+                <p>Уникальный насыщенный вкус с&nbsp;пикантными дымными нотками и&nbsp;сливочным послевкусием</p>
+              </div>
+            </div>
+
+            <button class="swiper-arrow" data-arrow-prev></button>
+            <button class="swiper-arrow" data-arrow-next></button>
+          </div>
+        </div>
+      </section>
+
+      <!--WINNERS-->
+      <div class="border border-top-invers"></div>
+      <section class="section section--winners" data-fixed-bg>
+        <div class="fixed-bg"></div>
+        <div class="container">
+          <h2 class="title title--h2 yellow">Победители</h2>
+
+          <div class="winners-filters">
+            <form action="#winners" method="GET" class="form">
+              <label class="label">
+                <select name="week" class="input input--select placeholder" required>
+                  <option value="" disabled="" selected="" hidden="">Выберите дату</option>
+                  <option value="08.09.2025-14.09.2025">08.09.2025-14.09.2025</option>
+                  <option value="15.09.2025-21.09.2025">15.09.2025-21.09.2025</option>
+                  <option value="22.09.2025-28.09.2025">22.09.2025-28.09.2025</option>
+                  <option value="29.09.2025-05.10.2025">29.09.2025-05.10.2025</option>
+                  <option value="06.10.2025-12.10.2025">06.10.2025-12.10.2025</option>
+                  <option value="13.10.2025-19.10.2025">13.10.2025-19.10.2025</option>
+                  <option value="20.10.2025-26.10.2025">20.10.2025-26.10.2025</option>
+                  <option value="27.10.2025-31.10.2025">27.10.2025-31.10.2025</option>
+                </select>
+                <span class="input-icon">
+                  <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.1569 1.65685L7.1007 7.71301L1.44385 2.05615" stroke="black" stroke-width="2" />
+                  </svg>
+                </span>
+              </label>
+            </form>
+
+            <script>
+              function onSearchFormSubmit(e) {
+                e.preventDefault();
+                alert('Форма поиска отправлена');
+                e.target.reset();
+              }
+            </script>
+
+            <form action="#" class="form" novalidate onsubmit="onSearchFormSubmit(event)">
+              <label>
+                <input type="tel" name="search" class="input input-search" placeholder="Поиск по телефону" autocomplete="off" required />
+              </label>
+
+              <button type="submit">
+                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.28711 17C13.7054 17 17.2871 13.4183 17.2871 9C17.2871 4.58172 13.7054 1 9.28711 1C4.86883 1 1.28711 4.58172 1.28711 9C1.28711 13.4183 4.86883 17 9.28711 17Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M19.287 19L14.937 14.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Имя</th>
+                <th>Контакт</th>
+                <th>Приз</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Пантелеймон Р.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Баллы Яндекс Плюс</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Константин Д.</td>
+                <td>+XXXXXXXX***</td>
+                <td>500 ₽ на Ozon</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Лера В.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Сертификат Cozy Home</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Антонина Н.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Сертификат Cozy Home</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Елизавета Т.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Сертификат Cozy Home</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <ul class="pagination">
+            <li>
+              <button href="#" class="pagination-btn prev" disabled>
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.27783 1.48193L1.35191 7.90169L7.27783 14.3214"
+                    stroke="#CC0102"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </li>
+            <li><a href="#" class="pagination-btn active">1</a></li>
+            <li><a href="#" class="pagination-btn">2</a></li>
+            <li><a href="#" class="pagination-btn">3</a></li>
+            <li><a href="#" class="pagination-btn">4</a></li>
+            <li>
+              <button class="pagination-btn next">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.72217 14.519L7.64809 8.09929L1.72217 1.67954"
+                    stroke="#CC0102"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="border border-bottom"></div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer" id="footer">
+      <ul class="footer__menu">
+        <li><a href="./">Правила акции</a></li>
+        <li><a href="./recipes">Политика конфиденциальности</a></li>
+        <li><a data-popup-open="callback">Обратная связь</a></li>
+      </ul>
+      <p>Срок проведения акции: С 31 августа по 31 сентября 2025</p>
+    </footer>
+
+    <!--POPUPS-->
+    <div class="backdrop" data-backdrop>
+      <div class="popup" data-popup>
+        <!--LOGIN POPUP-->
+        <div class="popup-content" id="login">
+          <button class="popup-close" data-popup-close></button>
+          <div class="tabs" data-tabs>
+            <ul class="tabs-navigation">
+              <li><button data-tab-target="1">Вход</button></li>
+              <li><button data-tab-target="2">Регистрация</button></li>
+            </ul>
+            <div class="tab" data-tab="1">
+              <!--Login form-->
+              <script>
+                function onLoginFormSubmit(e) {
+                  e.preventDefault();
+                  alert('Отправлена форма логина!');
+                }
+              </script>
+              <form action="#" class="form" novalidate onsubmit="onLoginFormSubmit(event)">
+                <label class="label">
+                  <span class="label__text">E-mail</span>
+                  <input type="email" name="email" class="input" required />
+                </label>
+                <label class="label">
+                  <span class="label__text">Пароль</span>
+                  <input type="password" name="password" class="input" required />
+                </label>
+                <label class="label">
+                  <input type="checkbox" name="remember" class="checkbox" />
+                  <span class="label__text">Запомнить меня</span>
+                </label>
+                <button type="submit" class="button button--submit full"><span>Войти</span></button>
+                <a class="link" data-popup-open="reset-password">Восстановление пароля</a>
+              </form>
+            </div>
+            <div class="tab" data-tab="2">
+              <!--Registration form-->
+              <script>
+                function onRegisterFormSubmit(e) {
+                  e.preventDefault();
+                  window.popup.open('register-success');
+                }
+              </script>
+              <form action="#" class="form" novalidate onsubmit="onRegisterFormSubmit(event)">
+                <label class="label">
+                  <span class="label__text">Имя</span>
+                  <input type="text" name="name" class="input" required />
+                </label>
+                <label class="label">
+                  <span class="label__text">Фамилия</span>
+                  <input type="text" name="sername" class="input" required />
+                </label>
+                <label class="label">
+                  <span class="label__text">E-mail</span>
+                  <input type="email" name="email" class="input" required />
+                </label>
+                <label class="label">
+                  <span class="label__text">Пароль</span>
+                  <input type="password" name="password" class="input" required placeholder="Придумайте пароль" />
+                </label>
+                <label class="label">
+                  <span class="label__text">Телефон</span>
+                  <input type="tel" name="phone" class="input" required placeholder="+7 ___ ___-__-__" autocomplete="off" />
+                </label>
+                <fieldset>
+                  <label class="label">
+                    <input type="checkbox" name="agree" class="checkbox" required />
+                    <span class="label__text">Я соглашаюсь с&nbsp;<a href="#" class="link">Правилами промоакции</a> </span>
+                  </label>
+                  <label class="label">
+                    <input class="checkbox" required type="checkbox" name="RegistrationInput.PersonalConfirmation" />
+                    <span class="label__text">
+                      Я соглашаюсь с&nbsp;<a href="/assets/pdf/rules.pdf?v=2" class="link">Соглашением на обработку персональных данных</a>
+                    </span>
+                  </label>
+                </fieldset>
+
+                <button type="submit" class="button button--submit full"><span>Зарегистрироваться</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!--REGISTER SUCCESS POPUP-->
+        <div class="popup-content" id="register-success">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <div class="popup-image">
+              <img src="./assets/img/registration.webp" alt="" />
+            </div>
+            <h2 class="popup-title">Спасибо <br />за&nbsp;регистрацию! 🎉</h2>
+            <p class="popup-subtitle">
+              <b>Добавьте благородного вкуса в&nbsp;общение с&nbsp;нашим сырным стикерпаком в&nbsp;Telegram!</b>
+            </p>
+            <div class="buttons">
+              <a href="#" class="button button--submit full" download>Скачать стикеры</a>
+            </div>
+          </div>
+        </div>
+
+        <!--RESET PASSWORD POPUP-->
+        <div class="popup-content" id="reset-password">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title">Восстановите <br />пароль</h2>
+
+            <!--reset password form-->
+            <script>
+              function onResetFormSubmit(e) {
+                e.preventDefault();
+                window.popup.open('reset-password-success');
+              }
+            </script>
+            <form action="#" class="form" novalidate onsubmit="onResetFormSubmit(event)">
+              <label class="label">
+                <span class="label__text">E-mail</span>
+                <input type="email" name="email" class="input" required />
+              </label>
+
+              <div class="buttons">
+                <button type="submit" class="button button--submit full"><span>Восстановить</span></button>
+              </div>
+
+              <a class="link" data-popup-open="login">Авторизация</a>
+            </form>
+          </div>
+        </div>
+
+        <!--RESET PASSWORD SUCCESS POPUP-->
+        <div class="popup-content" id="reset-password-success">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title">Восстановите <br />пароль</h2>
+            <p class="popup-subtitle">Отправили письмо с&nbsp;инструкцией <br />по&nbsp;восстановлению пароля</p>
+            <div class="buttons">
+              <button type="button" class="button button--submit full" data-popup-close>Продолжить</button>
+            </div>
+          </div>
+        </div>
+
+        <!--FAQ POPUP-->
+        <div class="popup-content" id="faq">
+          <button class="popup-close" data-popup-close></button>
+          <h4 class="title title--h4">Часто задаваемые вопросы</h4>
+          <ul class="faq" data-accordeons="">
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАК ПРИНЯТЬ УЧАСТИЕ В АКЦИИ?</p>
+              </div>
+              <div class="answer" style="height: 0px">
+                <div class="answer__content">
+                  <p>Чтобы стать участником Акции, необходимо:</p>
+                  <p>— Совершить покупку Продукции, из списка Продукции, участвующей в Акции, в количестве минимум 1 (одна) штука:</p>
+                  <ul>
+                    <li>Сыр мягкий President Brie Double Cream с белой плесенью 73% 6х200г Paper</li>
+                    <li>Сыр мягкий President Brie Double Cream с белой плесенью вес. 73% Box</li>
+                    <li>Сыр мягкий President Brie с белой плесенью 60% 6х200г Carton Shell</li>
+                    <li>Сыр мягкий President Brie с белой плесенью вес. 60% Box</li>
+                    <li>Сыр мягкий President Camembert Grill с белой плесенью 45% 3х250г Carton Shell</li>
+                    <li>Сыр мягкий President Camembert с белой плесенью 45% 8х125г Carton Shell</li>
+                    <li>Сыр мягкий President La Brique с белой плесенью 45% 4х200г Carton Shell</li>
+                    <li>Сыр мягкий President Lingot с белой плесенью вес. 60% Box</li>
+                    <li>Сыр мягкий President Mini Snack a la Francaise с красной плесенью 60% 6х90г Flowp</li>
+                    <li>Сыр мягкий President Petit Brie с белой плесенью 60% 8х125г Carton Shell</li>
+                    <li>Сыр мягкий President Snack a la Francaise с белой плесенью 60% 6х170г Flowp</li>
+                    <li>Сыр PRESIDENT Royal Bleu c голубой плесенью 55%, без змж, 125г</li>
+                    <li>Сыр President Le Cremiot Extra Fondant с белой плесенью 60%, 200г</li>
+                    <li>Сыр PRESIDENT Royal Bleu c голубой плесенью 55%, без змж, вес.</li>
+                    <li>Сыр мягкий President Козий Snack a la Francaise из козьего молока с белой плесенью 50% 6х90г</li>
+                  </ul>
+                  <p>— Зарегистрироваться на Сайте Акции https://president-cheese.ru/.</p>
+                  <p>— Чек покупки необходимо загрузить в личный кабинет на сайте акции.</p>
+                  <p>
+                    Загружаемая фотография кассового чека должна быть четкой, легко читаемой, со считываемым QR-кодом или штрих-кодом, датой и
+                    временем совершения покупки, и иной содержащейся на кассовом чеке информацией
+                  </p>
+                  <p>
+                    — Участник Акции может поучаствовать в розыгрыше одного дополнительного приза за выигрыш в игре «Мемори», размещенной на сайте
+                    Акции https://president-cheese.ru/. Участие в игре реализуется по желанию Участника и не является обязательным условием участия в
+                    Акции или получения иных призов. Участник получает возможность сыграть в игру только после регистрации не менее одного чека
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КТО МОЖЕТ ПРИНЯТЬ УЧАСТИЕ В АКЦИИ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    К участию в Акции допускаются дееспособные физические лица, граждане Российской Федерации, достигшие 18 лет, постоянно проживающие
+                    на территории РФ. В Акции не имеют права участвовать сотрудники и представители Клиента, Агента Клиента, Организатора, Оператора,
+                    производителя Продукции, аффилированные с Организатором / Оператором/Клиентом/Агентом Клиента, производителем Продукции лица, в
+                    том числе физические лица, с которыми у Организатора / Оператора/Клиента/Агента Клиента, производителя Продукции заключены
+                    гражданско-правовые договоры на выполнение работ и/или оказание услуг; сотрудники организаций, привлекаемых к проведению Акции, а
+                    также члены их семей.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>СРОКИ ПРОВЕДЕНИЯ АКЦИИ</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>Период совершения покупки и регистрации чеков с 01.09.2025 г. по 31.10.2025 г. (включительно).</p>
+                  <p>Период выдачи призов: с 01.09.2025 г. по 07.11.2025 года (включительно)</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>ГДЕ ПРОВОДИТСЯ АКЦИЯ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>Во всех магазинах всех торговых сетей, расположенные на территории Российской Федерации.</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАКАЯ ПРОДУКЦИЯ УЧАСТВУЕТ В АКЦИИ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <ul>
+                    <li>Сыр мягкий President Brie Double Cream с белой плесенью 73% 6х200г Paper</li>
+                    <li>Сыр мягкий President Brie Double Cream с белой плесенью вес. 73% Box</li>
+                    <li>Сыр мягкий President Brie с белой плесенью 60% 6х200г Carton Shell</li>
+                    <li>Сыр мягкий President Brie с белой плесенью вес. 60% Box</li>
+                    <li>Сыр мягкий President Camembert Grill с белой плесенью 45% 3х250г Carton Shell</li>
+                    <li>Сыр мягкий President Camembert с белой плесенью 45% 8х125г Carton Shell</li>
+                    <li>Сыр мягкий President La Brique с белой плесенью 45% 4х200г Carton Shell</li>
+                    <li>Сыр мягкий President Lingot с белой плесенью вес. 60% Box</li>
+                    <li>Сыр мягкий President Mini Snack a la Francaise с красной плесенью 60% 6х90г Flowp</li>
+                    <li>Сыр мягкий President Petit Brie с белой плесенью 60% 8х125г Carton Shell</li>
+                    <li>Сыр мягкий President Snack a la Francaise с белой плесенью 60% 6х170г Flowp</li>
+                    <li>Сыр PRESIDENT Royal Bleu c голубой плесенью 55%, без змж, 125г</li>
+                    <li>Сыр President Le Cremiot Extra Fondant с белой плесенью 60%, 200г</li>
+                    <li>Сыр PRESIDENT Royal Bleu c голубой плесенью 55%, без змж, вес.</li>
+                    <li>Сыр мягкий President Козий Snack a la Francaise из козьего молока с белой плесенью 50% 6х90г</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>СОХРАНЯТЬ ЛИ ЧЕКИ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>Чеки необходимо сохранять до окончания акции</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>НУЖНО ЛИ РЕГИСТРИРОВАТЬ ЧЕКИ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Чек необходимо зарегистрировать в Личном кабинете Сайта чек, подтверждающий покупку Продукции согласно условиям настоящих Правил.
+                    Фотография (изображение) чека должна быть чёткой, данные на чеке – однозначно читаемыми, чек должен быть отображен на фотографии
+                    полностью. Также Участник может воспользоваться опцией Сайта и вбить данные чека вручную в соответствующем разделе Личного
+                    кабинета.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>СКОЛЬКО РАЗ Я МОГУ ПОКУПАТЬ ПРОДУКЦИЮ "PRESEDENT" И УЧАСТВОВАТЬ В АКЦИИ В ТЕЧЕНИИ АКЦИИ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Каждый участник для участия в розыгрыше Призов может зарегистрировать не более 15 (пятнадцати) чеков в каждую неделю периода
+                    Акции.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАК ПРОВОДИТСЯ РОЗЫГРЫШ ПРИЗОВ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>Розыгрыш еженедельных призов происходит в соответствии с датами ниже:</p>
+                  <ul>
+                    <li>1-я неделя – с 01.09.2025 г. по 07.09.2025 г. включительно;</li>
+                    <li>2-я неделя – с 08.09.2025 г. по 14.09.2025 г. включительно;</li>
+                    <li>3-я неделя – с 15.09.2025 г. по 21.09.2025 г. включительно;</li>
+                    <li>4-я неделя – с 22.09.2025 г. по 28.09.2025 г. включительно;</li>
+                    <li>5-я неделя – с 29.09.2025 г. по 05.10.2025 г. включительно;</li>
+                    <li>6-я неделя – с 06.10.2025 г. по 12.10.2025 г. включительно;</li>
+                    <li>7-я неделя – с 13.10.2025 г. по 19.10.2025 г. включительно;</li>
+                    <li>8-я неделя – с 20.10.2025 г. по 26.10.2025 г. включительно;</li>
+                    <li>9-я неделя – с 27.10.2025 г. по 31.10.2025 г. включительно;</li>
+                  </ul>
+                  <p>Розыгрыш главных призов акции будет произведен:</p>
+                  <ul>
+                    <li>За период с 01.09.2025 г. по 30.09.2025 г.– 08.10.2025 г.;</li>
+                    <li>За период с 01.10.2025 г. по 31.10.2025 г.– 05.11.2025 г.;</li>
+                  </ul>
+                  <p>Розыгрыш призов проводится в соответствии с формулами, указанными в правилах акции, в разделе 8</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАК Я УЗНАЮ, ЧТО СТАЛ ПОБЕДИТЕЛЕМ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Организаторы акции свяжутся с вами по электронной почте, указанной в личном кабинете на сайте акции. Также результаты всех
+                    розыгрышей, будут публиковаться на Сайте Акции https://president-cheese.ru/.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАК ПРОИСХОДИТ ВРУЧЕНИЕ ПРИЗОВ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Все призы вручаются путем отправления электронного сертификата на электронную почту победителя, указанную при регистрации на сайте
+                    Акции https://president-cheese.ru/.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КТО УПЛАЧИВАЕТ НАЛОГ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Организатор акции выступает налоговым агентом, предоставляет в налоговые органы сведения о доходах физических лиц в связи с
+                    вручением им призов, а также в полном объёме удерживает денежную часть еженедельного и главного призов и уплачивает налог на
+                    доходы физических лиц из данной дополнительной денежной награды
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>ЧТО ДЕЛАТЬ, ЕСЛИ У МЕНЯ ВОЗНИКЛИ ДОПОЛНИТЕЛЬНЫЕ ВОПРОСЫ ПО ПРОВЕДЕНИЮ АКЦИИ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Если у вас возникли ещё вопросы, вы можете связаться с организаторами акции по электронной почте:
+                    <a href="mailto:info@kamamber-promo.ru">info@kamamber-promo.ru</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!--CHEQUE POPUP-->
+        <div class="popup-content" id="cheque">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title">Регистрация чека</h2>
+            <p class="popup-subtitle">Чек будет участвовать <br />в&nbsp;розыгрыше приза <br />из&nbsp;выбранной категории.</p>
+            <p class="popup-subtitle">Выбери какой приз подарит <br />тебе настоящее удовольствие.</p>
+            <div class="buttons">
+              <button class="button full" data-popup-open="cheque-info"><span>Отдых и релакс</span></button>
+              <button class="button full" data-popup-open="cheque-info"><span>Дом и уют</span></button>
+              <button class="button full" data-popup-open="cheque-info"><span>Техника и гаджеты</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!--CHEQUE INFO POPUP-->
+        <div class="popup-content" id="cheque-info">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title">Регистрация чека</h2>
+            <ul class="register-check-list">
+              <li>
+                <img src="./assets/img/cheque-info1.webp" alt="President" />
+                <span>Нажмите «Загрузить»</span>
+              </li>
+              <li>
+                <img src="./assets/img/cheque-info2.webp" alt="President" />
+                <span>Выберите фото чека</span>
+              </li>
+              <li>
+                <img src="./assets/img/cheque-info3.webp" alt="President" />
+                <span>Фото чека должно быть:</span>
+                <ul>
+                  <li>чётким</li>
+                  <li>с полным списком продуктов</li>
+                  <li>на фото должен быть QR код</li>
+                </ul>
+              </li>
+              <li>
+                <img src="./assets/img/cheque-info4.webp" alt="President" />
+                <span>Если фото окажется плохого качества, чек принят не будет</span>
+              </li>
+            </ul>
+            <div class="example">
+              <img src="./assets/img/cheque.webp" alt="President" />
+              <span>Пример чека</span>
+            </div>
+
+            <div class="buttons">
+              <button type="button" class="button button--submit full" data-popup-open="cheque-load">
+                <span>Загрузить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--CHEQUE LOAD POPUP-->
+        <div class="popup-content" id="cheque-load">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title">Регистрация чека</h2>
+
+            <!--cheque load form-->
+            <script>
+              function onChequeLoadFormSubmit(e) {
+                e.preventDefault();
+                window.popup.open('cheque-success');
+              }
+            </script>
+
+            <form action="#" class="dropzone" id="my-dropzone"></form>
+
+            <div class="buttons">
+              <button type="submit" class="button button--submit full" onClick="onChequeLoadFormSubmit(event)">
+                <span>Загрузить</span>
+              </button>
+
+              <a href="#" class="link" data-popup-open="cheque-in-self">Ввести данные чека вручную</a>
+            </div>
+          </div>
+        </div>
+
+        <!--CHEQUE-IN SELF POPUP-->
+        <div class="popup-content" id="cheque-in-self">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title popup-title--white">Ввод данных чека</h2>
+            <p class="popup-subtitle">Внимательно введите <br />данные чека в&nbsp;поля ниже</p>
+
+            <!--Login form-->
+            <script>
+              function onChequeSelfFormSubmit(e) {
+                e.preventDefault();
+                window.popup.open('cheque-success');
+              }
+            </script>
+            <form action="#" class="form" novalidate onsubmit="onChequeSelfFormSubmit(event)">
+              <label class="label">
+                <span class="label__text">ФН</span>
+                <input type="text" name="fn" class="input" required />
+              </label>
+              <label class="label">
+                <span class="label__text">ФД</span>
+                <input type="text" name="fd" class="input" required />
+              </label>
+              <label class="label">
+                <span class="label__text">ФП</span>
+                <input type="text" name="fp" class="input" required />
+              </label>
+              <label class="label">
+                <span class="label__text">Дата покупки</span>
+                <input type="date" name="date" class="input" required />
+              </label>
+              <label class="label">
+                <span class="label__text">Время покупки</span>
+                <input type="time" name="time" class="input" required />
+              </label>
+              <label class="label">
+                <span class="label__text">Сумма покупки</span>
+                <input type="number" name="summa" class="input" required />
+              </label>
+
+              <div class="buttons">
+                <button type="submit" class="button button--submit full"><span>Отправить</span></button>
+                <a href="#" class="link link--white" data-popup-open="cheque-load">Попробовать снова загрузить фото</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--CHEQUE SUCCESS POPUP-->
+        <div class="popup-content" id="cheque-success">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title">Чек зарегистрирован</h2>
+            <p class="popup-subtitle">
+              <b>Ваш чек загружен успешно. <br />Следите за&nbsp;его статусом <br />в&nbsp;своём личном кабинете.</b>
+            </p>
+            <div class="buttons">
+              <button type="button" class="button button--submit full" data-popup-close>Закрыть</button>
+            </div>
+          </div>
+        </div>
+
+        <!--PRODUCTION POPUP-->
+        <div class="popup-content" id="production">
+          <button class="popup-close" data-popup-close></button>
+          <h2 class="title title--h4">Окунитесь в&nbsp;мир&nbsp;оттенков изысканного вкуса настоящего благородного сыра Président!</h2>
+          <ul class="production">
+            <li>
+              <img src="./assets/img/productions/1.webp" alt="" />
+              <h3>Brie</h3>
+              <p>Классический сыр&nbsp;с&nbsp;благородной плесенью, знаменитый своей бархатистой корочкой и&nbsp;глубоким сливочным вкусом</p>
+            </li>
+            <li>
+              <img src="./assets/img/productions/2.webp" alt="" />
+              <h3>Camembert</h3>
+              <p>Легендарный сырс&nbsp;нежной сердцевиной и&nbsp;пикантным вусом&nbsp;тонкой бархатистой&nbsp;корочки</p>
+            </li>
+            <li>
+              <img src="./assets/img/productions/3.webp" alt="" />
+              <h3>Le Cremiot Extra Fondant</h3>
+              <p>Сыр с&nbsp;нежнейшей кремовой текстурой, который буквально тает во&nbsp;рту.</p>
+            </li>
+            <li>
+              <img src="./assets/img/productions/4.webp" alt="" />
+              <h3>Royal Bleu</h3>
+              <p>
+                Сыр с&nbsp;голубой плесенью и&nbsp;уникальным вкусом, который достигается благодаря длинному сроку созревания (до&nbsp;90&nbsp;дней)
+              </p>
+            </li>
+            <li>
+              <img src="./assets/img/productions/5.webp" alt="" />
+              <h3>La Brique</h3>
+              <p>Тонкая корочка, текучая текстура и&nbsp;бесподобный вкус с&nbsp;прятными нотками тёплого молока и&nbsp;фундка</p>
+            </li>
+            <li>
+              <img src="./assets/img/productions/6.webp" alt="" />
+              <h3>Red Snack</h3>
+              <p>Уникальный насыщенный вкус с&nbsp;пикантными дымными нотками и&nbsp;сливочным послевкусием</p>
+            </li>
+          </ul>
+        </div>
+
+        <!--GAME POPUP-->
+        <div class="popup-content" id="memory">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <ul class="memory-preview">
+              <li>
+                <div class="card">
+                  <div class="flip">
+                    <div class="flip__front"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card active">
+                  <div class="flip">
+                    <div class="flip__back">
+                      <img src="./assets/img/memory/4.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <p class="popup-subtitle">
+              <b>
+                Играй в&nbsp;игру Мемори <br />
+                и&nbsp;участвуй в&nbsp;розыгрыше <br />
+                специального приза
+              </b>
+            </p>
+            <div class="buttons">
+              <a href="./memory.html" class="button full"><span>Играть</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!--CALLBACK POPUP-->
+        <div class="popup-content" id="callback">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title">Обратная связь</h2>
+
+            <!--callback form-->
+            <script>
+              function onCallbackFormSubmit(e) {
+                e.preventDefault();
+                window.popup.open('callback-success');
+              }
+            </script>
+            <form action="#" class="form" novalidate onsubmit="onCallbackFormSubmit(event)">
+              <label class="label">
+                <span class="label__text">Имя</span>
+                <input type="text" name="name" class="input" required />
+              </label>
+              <label class="label">
+                <span class="label__text">E-mail</span>
+                <input type="email" name="email" class="input" required />
+              </label>
+              <label class="label">
+                <span class="label__text">Тема сообщения</span>
+                <div class="select">
+                  <select name="week" class="input input--select placeholder" required>
+                    <option value="" disabled="" selected="" hidden="">Выберите тему</option>
+                    <option value="Неделя 1">Тема 1</option>
+                    <option value="Неделя 2">Тема 2</option>
+                    <option value="Неделя 3">Тема 3</option>
+                  </select>
+                  <span class="input-icon">
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.1569 1.65685L7.1007 7.71301L1.44385 2.05615" stroke="black" stroke-width="2" />
+                    </svg>
+                  </span>
+                </div>
+              </label>
+              <label class="label">
+                <span class="label__text">Текст сообщения</span>
+                <textarea name="message" class="input input--textarea" required></textarea>
+              </label>
+
+              <button type="submit" class="button button--submit full"><span>Отправить</span></button>
+            </form>
+          </div>
+        </div>
+
+        <!--CALLBACK POPUP SUCCESS-->
+        <div class="popup-content" id="callback-success">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <h2 class="popup-title">Обратная связь</h2>
+
+            <p class="success-text">
+              <strong>Спасибо!</strong>
+              Ваше сообщение отправлено
+            </p>
+
+            <div class="buttons">
+              <button type="button" class="button button--submit full" data-popup-close>Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/forms.js" type="module"></script>
+    <script src="./assets/js/scripts.js" type="module"></script>
+    <script src="./assets/js/dropzone.min.js"></script>
+    <script>
+      Dropzone.autoDiscover = false;
+
+      const dz = new Dropzone('#my-dropzone', {
+        url: '#',
+        autoProcessQueue: false,
+        uploadMultiple: false,
+        maxFiles: 1,
+        thumbnailWidth: 315,
+        thumbnailHeight: 200,
+        addRemoveLinks: true,
+        clickable: true,
+        acceptedFiles: 'image/*',
+        dictDefaultMessage: 'Перетащите фото чека или нажмите для выбора',
+        dictRemoveFile: 'Удалить',
+      });
+
+      dz.on('maxfilesexceeded', function (file) {
+        this.removeAllFiles();
+        this.addFile(file);
+      });
+    </script>
+  </body>
+</html>

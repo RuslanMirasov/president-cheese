@@ -1,0 +1,152 @@
+.section--about {
+  padding: 80px 0px 120px 0px;
+  z-index: 4;
+  overflow: visible;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 338px;
+    background: url('../img/svg/hero-bottom.svg') no-repeat left top;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0px;
+    top: -120px;
+    z-index: 0;
+    @media (max-width: 1023px) {
+      height: 230px;
+      top: -110px;
+    }
+    @media (max-width: 767px) {
+      background: url('../img/svg/hero-bottom.svg') no-repeat left top;
+      background-size: 100% 100%;
+      height: 100px;
+      top: -95px;
+    }
+  }
+}
+
+.about-list {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  li {
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    gap: 34px;
+    width: auto;
+
+    .title {
+      color: var(--yellow);
+    }
+
+    p {
+      display: block;
+      position: relative;
+      font-family: var(--4);
+      font-size: 24px;
+    }
+  }
+}
+
+.numbered-list {
+  counter-reset: num;
+  li {
+    counter-increment: num;
+    &:before {
+      content: counter(num);
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      background: var(--gradient);
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      color: var(--black);
+      font-family: var(--4);
+      font-size: 40px;
+      line-height: 1;
+      padding-top: 4px;
+    }
+  }
+}
+
+.yandex-small {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: -40px;
+  top: -10px;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1279px) {
+  .about-list {
+    gap: 20px;
+
+    li {
+      gap: 24px;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .yandex-small {
+    width: 56px;
+    height: 56px;
+    right: auto;
+    left: 200px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .section--about {
+    padding: 80px 0px 80px 0px;
+  }
+
+  .about-list {
+    gap: 0px;
+    li {
+      width: 50%;
+      gap: 24px;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 50px;
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section--about {
+    padding: 40px 0px 80px 0px;
+  }
+
+  .about-list {
+    li {
+      gap: 22px;
+      width: 100%;
+      justify-content: flex-start;
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
