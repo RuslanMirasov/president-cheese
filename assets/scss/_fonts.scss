@@ -1,41 +1,91 @@
 @font-face {
   font-family: 'circerounded-regular2';
-  src: url('../fonts/circerounded-regular2.woff2') format('woff2'), url('../fonts/circerounded-regular2.woff') format('woff');
+  src:
+    url('../fonts/circerounded-regular2.woff2') format('woff2'),
+    url('../fonts/circerounded-regular2.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'circerounded-regular3';
-  src: url('../fonts/circerounded-regular3.woff2') format('woff2'), url('../fonts/circerounded-regular3.woff') format('woff');
+  src:
+    url('../fonts/circerounded-regular3.woff2') format('woff2'),
+    url('../fonts/circerounded-regular3.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'circerounded-regular4';
-  src: url('../fonts/circerounded-regular4.woff2') format('woff2'), url('../fonts/circerounded-regular4.woff') format('woff');
+  src:
+    url('../fonts/circerounded-regular4.woff2') format('woff2'),
+    url('../fonts/circerounded-regular4.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'circerounded-regular5';
-  src: url('../fonts/circerounded-regular5.woff2') format('woff2'), url('../fonts/circerounded-regular5.woff') format('woff');
+  src:
+    url('../fonts/circerounded-regular5.woff2') format('woff2'),
+    url('../fonts/circerounded-regular5.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'montserrat-regular';
-  src: url('../fonts/montserrat-regular.woff2') format('woff2'), url('../fonts/montserrat-regular.woff') format('woff');
+  src:
+    url('../fonts/montserrat-regular.woff2') format('woff2'),
+    url('../fonts/montserrat-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'montserrat-medium';
-  src: url('../fonts/montserrat-medium.woff2') format('woff2'), url('../fonts/montserrat-medium.woff') format('woff');
+  src:
+    url('../fonts/montserrat-medium.woff2') format('woff2'),
+    url('../fonts/montserrat-medium.woff') format('woff');
   font-weight: normal;
+  font-style: normal;
+}
+
+// АКТУАЛЬНЫЕ
+
+@font-face {
+  font-family: 'anticva';
+  src:
+    url('../fonts/anticva-regular.woff2') format('woff2'),
+    url('../fonts/anticva-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src:
+    url('../fonts/gilroy-regular.woff2') format('woff2'),
+    url('../fonts/gilroy-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src:
+    url('../fonts/gilroy-medium.woff2') format('woff2'),
+    url('../fonts/gilroy-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src:
+    url('../fonts/gilroy-semibold.woff2') format('woff2'),
+    url('../fonts/gilroy-semibold.woff') format('woff');
+  font-weight: 600;
   font-style: normal;
 }
