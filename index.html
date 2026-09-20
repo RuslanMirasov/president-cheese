@@ -33,12 +33,12 @@
 
         <nav class="navigation">
           <ul class="menu">
-            <li><a href="./" class="menu__link">Промо</a></li>
+            <li><a href="./#hero" class="menu__link">Промо</a></li>
             <li><a href="./#gallery" class="menu__link">Галерея шедевров</a></li>
             <li><a href="./#products" class="menu__link">Продукты</a></li>
             <li><a href="./#markets" class="menu__link">Где купить?</a></li>
             <li><a class="menu__link" data-popup-open="memory">Игра</a></li>
-            <li><a href="./" class="menu__link">Призы</a></li>
+            <li><a href="#" class="menu__link">Призы</a></li>
             <li><a href="./#winners" class="menu__link">Победители</a></li>
             <li><a href="./#rules" class="menu__link">Правила</a></li>
             <li><a class="menu__link" data-popup-open="faq">FAQ</a></li>
@@ -60,6 +60,34 @@
       <section class="section section--hero" id="hero">
         <div class="container">
           <h1 class="title title--h1 gold">Вкус как <br />искусство</h1>
+          <video src="./assets/img/main_animation.webm" autoplay muted loop playsinline class="main-animation"></video>
+
+          <div class="timer">
+            <div class="main-prize">
+              <img src="./assets/img/prizes/main.webp" alt="President" />
+            </div>
+
+            <h2 class="title title--h3 gold">До старта акции</h2>
+
+            <ul class="countdown" data-countdown>
+              <li>
+                <p>дни</p>
+                <b data-days class="gold">22</b>
+              </li>
+              <li>
+                <p>часы</p>
+                <b data-hours class="gold">8</b>
+              </li>
+              <li>
+                <p>минуты</p>
+                <b data-minutes class="gold">22</b>
+              </li>
+              <li>
+                <p>сукунд</p>
+                <b data-seconds class="gold">22</b>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -147,6 +175,7 @@
             </ul>
           </div>
 
+          <!--Еженедельные-->
           <div class="gallery" data-slider data-slides-per-view="3,2,1" data-space-between="32,24,12">
             <p class="subtitle big">Еженедельные</p>
 

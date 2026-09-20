@@ -6,9 +6,12 @@ import { initAccordeons } from './accordeon.js';
 import { initTabs } from './tabs.js';
 import { initMamoryGame } from './memoryGame.js';
 import { initSelectFields } from './forms.js';
+import { initCountdown } from './countdown.js';
 
 popup.init();
 window.popup = popup;
+
+initCountdown('01.01.2027 00:00:00');
 initNavigationMenu();
 checkFixedBg();
 initSliders();
