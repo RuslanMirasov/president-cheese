@@ -1,5 +1,6 @@
 .section--memory {
   min-height: 100svh;
+  padding: 0;
   background: url('../img/game-bg.webp') no-repeat left center/cover;
 
   @media (max-width: 767px) {

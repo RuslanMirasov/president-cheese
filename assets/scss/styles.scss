@@ -14,6 +14,7 @@
   --yellow-light: #e6d689;
   --color: #ffffff;
   --gradient: linear-gradient(90deg, #ffe680 0%, #fab041 50%, #ffe680 100%);
+  --golden-gradient: linear-gradient(90deg, #d7bf5d, #dcc671, #c9a343, #d7bb55, #c89b3e);
   --white: #ffffff;
   --black: #000000;
   --red: #cc0003;
@@ -43,7 +44,8 @@
 @import 'section__about';
 @import 'section__mainprize';
 @import 'section__weekprizes';
-@import 'secsion__garanty';
+@import 'section__garanty';
+@import 'section__markets';
 @import 'section__winners';
 @import 'section__lk';
 @import 'section__memory';

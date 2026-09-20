@@ -35,10 +35,10 @@
             <li><a href="./" class="menu__link">Промо</a></li>
             <li><a class="menu__link">Галерея шедевров</a></li>
             <li><a class="menu__link" data-popup-open="production">Продукты</a></li>
-            <li><a class="menu__link" data-popup-open="markets">Где купить?</a></li>
+            <li><a href="./#markets" class="menu__link">Где купить?</a></li>
             <li><a class="menu__link" data-popup-open="memory">Игра</a></li>
             <li><a href="./" class="menu__link">Призы</a></li>
-            <li><a href="./" class="menu__link">Победители</a></li>
+            <li><a href="./#winners" class="menu__link">Победители</a></li>
             <li><a href="./" class="menu__link">Правила</a></li>
             <li><a class="menu__link" data-popup-open="faq">FAQ</a></li>
             <li class="header__buttons">
@@ -56,18 +56,147 @@
 
     <main class="main">
       <!--HERO-->
-      <section class="section section--hero"></section>
+      <section class="section section--hero" id="hero">
+        <div class="container">
+          <h1 class="title title--h1 gold">Вкус как <br />искусство</h1>
+        </div>
+      </section>
+
+      <!--MARKETS-->
+      <section class="section section--markets lines--bg" id="markets">
+        <div class="container">
+          <h2 class="title title--h2 gold">Где купить?</h2>
+
+          <div class="markets-wrapper">
+            <h3 class="subtitle">Онлайн-площадки и&nbsp;сервисы доставки</h3>
+
+            <ul class="markets">
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/ozon.webp" alt="ozon" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/metro.webp" alt="metro" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/wildberries.webp" alt="wildberries" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/vkusvill.webp" alt="vkusvill" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/apeti.webp" alt="apeti" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/wnestyle.webp" alt="wnestyle" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/sber-market.webp" alt="sber-market" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/yandeks-lavka.webp" alt="yandeks-lavka" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/maksi.webp" alt="maksi" />
+                  <button type="button">Купить</button>
+                </a>
+              </li>
+            </ul>
+
+            <h3 class="subtitle">Офлайн-магазины и&nbsp;сети</h3>
+
+            <ul class="markets">
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/perekrestok.webp" alt="perekrestok" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/lenta.webp" alt="lenta" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/ashan.webp" alt="ashan" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/magnit.webp" alt="magnit" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/globus.webp" alt="globus" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/metro.webp" alt="metro" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="markets__link">
+                  <img src="./assets/img/markets/diksi.webp" alt="diksi" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--WINNERS-->
+      <section class="section section--winners" id="winners">
+        <div class="container">
+          <h2 class="title title--h2 red">ПОБЕДИТЕЛИ</h2>
+        </div>
+      </section>
     </main>
 
     <!--FOOTER-->
     <footer class="footer" id="footer">
       <ul class="footer__menu">
-        <li><a href="./">Правила акции</a></li>
-        <li><a href="./recipes">Политика конфиденциальности</a></li>
+        <li><a href="#">Правила акции</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
         <li><a data-popup-open="callback">Обратная связь</a></li>
       </ul>
-      <p>Срок проведения акции: С 31 августа по 31 сентября 2025</p>
-      <button class="button button--small" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
+
+      <img src="./assets/img/logo.webp" alt="President logo" class="footer-logo" />
+
+      <p>Срок проведения акции: С ХХ января по ХХ декабря ХХХХ</p>
     </footer>
 
     <!--POPUPS-->
