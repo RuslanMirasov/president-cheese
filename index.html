@@ -34,8 +34,8 @@
         <nav class="navigation">
           <ul class="menu">
             <li><a href="./" class="menu__link">Промо</a></li>
-            <li><a class="menu__link">Галерея шедевров</a></li>
-            <li><a class="menu__link" data-popup-open="production">Продукты</a></li>
+            <li><a href="./#gallery" class="menu__link">Галерея шедевров</a></li>
+            <li><a href="./#products" class="menu__link">Продукты</a></li>
             <li><a href="./#markets" class="menu__link">Где купить?</a></li>
             <li><a class="menu__link" data-popup-open="memory">Игра</a></li>
             <li><a href="./" class="menu__link">Призы</a></li>
@@ -60,6 +60,169 @@
       <section class="section section--hero" id="hero">
         <div class="container">
           <h1 class="title title--h1 gold">Вкус как <br />искусство</h1>
+        </div>
+      </section>
+
+      <!--ГАЛЕРЕЯ-->
+      <section class="section section--gallery lines--bg" id="gallery">
+        <div class="container">
+          <h2 class="title title--h2 gold">Галерея шедевров</h2>
+
+          <!--Гарантированные-->
+          <div class="gallery">
+            <p class="subtitle big">Гарантированные</p>
+
+            <ul class="gallery-list">
+              <li>
+                <div class="gallery-image"><img src="./assets/img/gallery/1.webp" alt="President" /></div>
+                <div class="border-text">
+                  <p>Лимитированные обвесы <br />KRIVOKOSO</p>
+                </div>
+              </li>
+              <li>
+                <div class="gallery-image"><img src="./assets/img/gallery/2.webp" alt="President" /></div>
+                <div class="border-text">
+                  <p>Деньги на телефон <br />100 ₽</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="gallery" data-slider data-slides-per-view="3,2,1" data-space-between="32,24,12">
+            <p class="subtitle big">Еженедельные</p>
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="gallery-image compact"><img src="./assets/img/gallery/3.webp" alt="President" /></div>
+                  <div class="border-text">
+                    <p>Сертификат Яндекс Афиша <br />2 000 ₽</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery-image compact"><img src="./assets/img/gallery/4.webp" alt="President" /></div>
+                  <div class="border-text">
+                    <p>Сертификат Gipfel <br />3 000 ₽</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery-image compact"><img src="./assets/img/gallery/5.webp" alt="President" /></div>
+                  <div class="border-text">
+                    <p>Сертификат М.Видео <br />4 000 ₽</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery-image compact"><img src="./assets/img/gallery/6.webp" alt="President" /></div>
+                  <div class="border-text">
+                    <p>Сертификат Леонардо <br />2 000 ₽</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="gallery-image compact"><img src="./assets/img/gallery/7.webp" alt="President" /></div>
+                  <div class="border-text">
+                    <p>Сертификат Cozy Home <br />3 000 ₽</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="swiper-arrow" data-arrow-prev></button>
+            <button class="swiper-arrow" data-arrow-next></button>
+          </div>
+
+          <!--Ежемесячные-->
+          <div class="gallery">
+            <p class="subtitle big">Ежемесячные</p>
+
+            <ul class="gallery-list compact">
+              <li>
+                <div class="gallery-image"><img src="./assets/img/gallery/8.webp" alt="President" /></div>
+                <div class="border-text">
+                  <p>iPhone</p>
+                </div>
+              </li>
+              <li>
+                <div class="gallery-image"><img src="./assets/img/gallery/9.webp" alt="President" /></div>
+                <div class="border-text">
+                  <p>iPad</p>
+                </div>
+              </li>
+              <li>
+                <div class="gallery-image"><img src="./assets/img/gallery/10.webp" alt="President" /></div>
+                <div class="border-text">
+                  <p>MacBook</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!--Дополнительные-->
+          <div class="gallery">
+            <p class="subtitle big">Дополнительные</p>
+
+            <ul class="gallery-list">
+              <li>
+                <div class="gallery-image"><img src="./assets/img/gallery/11.webp" alt="President" /></div>
+                <div class="border-text big">
+                  <p>Спецприз за игру <br /><a href="" data-popup-open="memory">Угадай шедевр</a></p>
+                  <b>Ежедневно</b>
+                  <p>Сертификат OZON 1 000 ₽</p>
+                </div>
+              </li>
+              <li>
+                <div class="gallery-image"><img src="./assets/img/gallery/12.webp" alt="President" /></div>
+                <div class="border-text big">
+                  <p>За регистрацию <br />2-х чеков в неделю</p>
+                  <b>Каждую неделю</b>
+                  <p>Аэрогриль BORK</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main-prize">
+            <img src="./assets/img/prizes/main.webp" alt="President" />
+          </div>
+        </div>
+      </section>
+
+      <!--ПРОДУКТЫ-->
+      <section class="section section--products" id="products">
+        <div class="container">
+          <h2 class="title title--h2 red">Продукты</h2>
+          <p class="subtitle red">участвующие в акции</p>
+
+          <ul class="products">
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/1.webp" alt="Camembert" />
+              </div>
+
+              <div class="border-text">
+                <p>Camembert</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/2.webp" alt="Cremiot" />
+              </div>
+
+              <div class="border-text">
+                <p>Cremiot</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/3.webp" alt="Brie" />
+              </div>
+
+              <div class="border-text">
+                <p>Brie</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 

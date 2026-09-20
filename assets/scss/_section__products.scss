@@ -1,0 +1,147 @@
+.section--products {
+  background: var(--golden-gradient);
+
+  .subtitle {
+    color: var(--red-text);
+    text-align: center;
+    margin-top: 16px;
+  }
+}
+
+.products {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1158px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 60px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  li {
+    width: 300px;
+    position: relative;
+  }
+}
+
+.product-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 294px;
+
+  img {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 420px;
+  }
+}
+
+.border-text {
+  display: flex;
+  position: relative;
+  width: 285px;
+  height: 64px;
+  background: url('../img/text-bg.webp') no-repeat center center/cover;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  text-align: center;
+
+  box-shadow:
+    0px 4px 9px 0px rgba(70, 1, 1, 0.17),
+    0px 17px 17px 0px rgba(70, 1, 1, 0.14),
+    0px 38px 23px 0px rgba(70, 1, 1, 0.09),
+    0px 68px 27px 0px rgba(70, 1, 1, 0.03);
+
+  &.big {
+    height: 160px;
+    background: url('../img/text-bg-big.webp') no-repeat center center/cover;
+    p {
+      font-weight: 400;
+    }
+  }
+
+  p {
+    color: var(--black);
+    font-style: 18px;
+    font-weight: 500;
+  }
+
+  b {
+    color: var(--black);
+    font-family: var(--gilroy);
+    font-weight: 600;
+  }
+
+  a {
+    color: var(--red);
+    text-decoration: underline;
+  }
+}
+
+//1024
+@media (max-width: 1151px) {
+  .section--products {
+    .subtitle {
+      margin-top: 10px;
+    }
+  }
+
+  .products {
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .product-image {
+    height: 250px;
+
+    img {
+      height: 350px;
+    }
+  }
+}
+
+//768
+@media (max-width: 1023px) {
+  .products {
+    max-width: 650px;
+    margin-top: 30px;
+    li:nth-child(2) {
+      order: 2;
+    }
+  }
+  .product-image {
+    height: 250px;
+
+    img {
+      height: 350px;
+    }
+  }
+}
+
+//375
+@media (max-width: 767px) {
+  .products {
+    li:nth-child(2) {
+      order: 0;
+    }
+  }
+  .product-image {
+    height: 240px;
+
+    img {
+      height: 330px;
+    }
+  }
+}

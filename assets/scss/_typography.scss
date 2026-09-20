@@ -134,5 +134,8 @@
   color: var(--yellow);
   &.big {
     font-size: 32px;
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
   }
 }
