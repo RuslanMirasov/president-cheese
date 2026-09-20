@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/dropzone.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/choices.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.min.css" />
     <title>President</title>
   </head>
@@ -74,63 +75,63 @@
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/ozon.webp" alt="ozon" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/metro.webp" alt="metro" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/wildberries.webp" alt="wildberries" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/vkusvill.webp" alt="vkusvill" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/apeti.webp" alt="apeti" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/wnestyle.webp" alt="wnestyle" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/sber-market.webp" alt="sber-market" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/yandeks-lavka.webp" alt="yandeks-lavka" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="markets__link">
                   <img src="./assets/img/markets/maksi.webp" alt="maksi" />
-                  <button type="button">Купить</button>
+                  <button type="button" class="button"><span>Купить</span></button>
                 </a>
               </li>
             </ul>
@@ -182,6 +183,104 @@
       <section class="section section--winners" id="winners">
         <div class="container">
           <h2 class="title title--h2 red">ПОБЕДИТЕЛИ</h2>
+
+          <div class="winners">
+            <!--filters-->
+            <div class="winners-filters">
+              <form action="#">
+                <select data-select name="weeks">
+                  <option value="all">Все розыгрыши</option>
+                  <option value="16.05.2026 - 23.06.2026">16.05.2026 - 23.06.2026</option>
+                  <option value="16.05.2026 - 23.06.2026">17.05.2026 - 24.06.2026</option>
+                  <option value="16.05.2026 - 23.06.2026">19.05.2026 - 26.06.2026</option>
+                </select>
+              </form>
+
+              <script>
+                const onSearchFormSubmit = e => {
+                  e.preventDefault();
+                  alert('Поиск по номеру телефона');
+                  e.target.reset();
+                };
+              </script>
+              <form action="#" class="form" novalidate onsubmit="onSearchFormSubmit(event)">
+                <label class="label">
+                  <input type="tel" name="search" class="input" placeholder="Поиск по номеру телефона" required />
+                </label>
+                <button type="submit" class="button button--red-submit medium"><span>Найти</span></button>
+              </form>
+            </div>
+
+            <!--table-->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Дата<span> розыгрыша</span></th>
+                  <th>Имя<span> участника</span></th>
+                  <th>Телефон</th>
+                  <th><span>Наименование</span> приз<span>а</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>26.09.2025</td>
+                  <td>Маргарита</td>
+                  <td>+XXX XXX X***</td>
+                  <td>Сертификат Левел Тревел на 10&nbsp;000 рублей</td>
+                </tr>
+                <tr>
+                  <td>26.09.2025</td>
+                  <td>Аркадий</td>
+                  <td>+XXX XXX X***</td>
+                  <td>Набор кухонных принадлежностей для&nbsp;гриля</td>
+                </tr>
+                <tr>
+                  <td>26.09.2025</td>
+                  <td>Пантелеймон</td>
+                  <td>+XXX XXX X***</td>
+                  <td>ХХХХХХХХХ</td>
+                </tr>
+                <tr>
+                  <td>26.09.2025</td>
+                  <td>Иван</td>
+                  <td>+XXX XXX X***</td>
+                  <td>ХХХХХХХХХ</td>
+                </tr>
+                <tr>
+                  <td>26.09.2025</td>
+                  <td>Иван</td>
+                  <td>+XXX XXX X***</td>
+                  <td>ХХХХХХХХХ</td>
+                </tr>
+                <tr>
+                  <td>26.09.2025</td>
+                  <td>Иван</td>
+                  <td>+XXX XXX X***</td>
+                  <td>ХХХХХХХХХ</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!--pagination-->
+            <ul class="pagination">
+              <li>
+                <button href="#" class="pagination-btn prev" disabled>
+                  <img src="./assets/img/svg/prev.svg" alt="" />
+                </button>
+              </li>
+              <li><a href="#" class="pagination-btn active">1</a></li>
+              <li><a href="#" class="pagination-btn">2</a></li>
+              <li><a href="#" class="pagination-btn">3</a></li>
+              <li><a href="#" class="pagination-btn">4</a></li>
+              <li><a href="#" class="pagination-btn">5</a></li>
+              <li><a href="#" class="pagination-btn">6</a></li>
+              <li>
+                <button class="pagination-btn next">
+                  <img src="./assets/img/svg/next.svg" alt="" />
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
@@ -857,6 +956,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/choices.min.js"></script>
     <script src="./assets/js/forms.js" type="module"></script>
     <script src="./assets/js/scripts.js" type="module"></script>
     <script src="./assets/js/dropzone.min.js"></script>

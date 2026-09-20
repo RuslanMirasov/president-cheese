@@ -5,12 +5,14 @@ import { initScrollToBlock } from './scrollToBlock.js';
 import { initAccordeons } from './accordeon.js';
 import { initTabs } from './tabs.js';
 import { initMamoryGame } from './memoryGame.js';
+import { initSelectFields } from './forms.js';
 
 popup.init();
 window.popup = popup;
 initNavigationMenu();
 checkFixedBg();
 initSliders();
+initSelectFields();
 fixHeaderOnScroll();
 initScrollToBlock();
 initAccordeons();

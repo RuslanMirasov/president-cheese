@@ -3,6 +3,20 @@ const labelsForFile = document.querySelectorAll('.label-for-file');
 const inputsFile = document.querySelectorAll('.input-file');
 const showPasswordButtons = document.querySelectorAll('[data-password-btn]');
 
+export const initSelectFields = () => {
+  const allSelectEl = document.querySelectorAll('[data-select]');
+
+  if (allSelectEl.length === 0) return;
+
+  allSelectEl.forEach(select => {
+    new Choices(select, {
+      searchEnabled: false,
+      shouldSort: false,
+      itemSelectText: '',
+    });
+  });
+};
+
 const validationRegEx = [
   {
     type: 'tel',
