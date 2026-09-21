@@ -1646,7 +1646,6 @@ a {
   min-height: 50px;
   position: relative;
   font-size: 20px;
-  text-transform: uppercase;
   cursor: pointer;
 }
 @media (max-width: 767px) {
@@ -1658,7 +1657,7 @@ a {
   content: "";
   width: 50px;
   height: 50px;
-  background: url("../img/svg/arrow-next.svg") no-repeat center center;
+  background: url("../img/svg/arrow-next-white.svg") no-repeat center center;
   background-size: 10px 18px;
   position: absolute;
   right: 0px;
@@ -1700,7 +1699,7 @@ a {
   display: block;
   position: relative;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.4;
 }
 @media (max-width: 767px) {
   .accordeon .answer .answer__content p,
@@ -3263,6 +3262,8 @@ body.locked {
   margin: 20px -20px 0px auto;
   pointer-events: none;
   z-index: 2;
+  -webkit-filter: drop-shadow(-3.25px 5.69px 14.23px rgba(0, 0, 0, 0.19)) drop-shadow(-13.42px 22.36px 26.02px rgba(0, 0, 0, 0.16)) drop-shadow(-29.68px 50px 34.96px rgba(0, 0, 0, 0.1)) drop-shadow(-53.26px 88.63px 41.47px rgba(0, 0, 0, 0.03));
+          filter: drop-shadow(-3.25px 5.69px 14.23px rgba(0, 0, 0, 0.19)) drop-shadow(-13.42px 22.36px 26.02px rgba(0, 0, 0, 0.16)) drop-shadow(-29.68px 50px 34.96px rgba(0, 0, 0, 0.1)) drop-shadow(-53.26px 88.63px 41.47px rgba(0, 0, 0, 0.03));
 }
 @media (min-width: 1024px) {
   .main-animation {
@@ -3566,6 +3567,7 @@ body.locked {
   padding: 85px 50px;
   margin: 0 auto;
   z-index: 1;
+  scroll-margin: 50px;
 }
 .rules:before {
   content: "";

@@ -50,8 +50,8 @@
   margin: 20px -20px 0px auto;
   pointer-events: none;
   z-index: 2;
-  // filter: drop-shadow(-3.25px 5.69px 14.23px rgba(0, 0, 0, 0.19)) drop-shadow(-13.42px 22.36px 26.02px rgba(0, 0, 0, 0.16))
-  //   drop-shadow(-29.68px 50px 34.96px rgba(0, 0, 0, 0.1)) drop-shadow(-53.26px 88.63px 41.47px rgba(0, 0, 0, 0.03));
+  filter: drop-shadow(-3.25px 5.69px 14.23px rgba(0, 0, 0, 0.19)) drop-shadow(-13.42px 22.36px 26.02px rgba(0, 0, 0, 0.16))
+    drop-shadow(-29.68px 50px 34.96px rgba(0, 0, 0, 0.1)) drop-shadow(-53.26px 88.63px 41.47px rgba(0, 0, 0, 0.03));
 
   @media (min-width: 1024px) {
     display: block;
