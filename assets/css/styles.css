@@ -3214,6 +3214,11 @@ body.locked {
   gap: 10px;
   margin-top: 16px;
 }
+@media (min-width: 500px) {
+  .countdown {
+    max-width: 384px;
+  }
+}
 .countdown li {
   display: block;
   position: relative;
