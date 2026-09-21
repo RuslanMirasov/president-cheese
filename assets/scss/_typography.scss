@@ -29,6 +29,15 @@
     font-size: 32px;
     line-height: 1.1;
     text-align: left;
+    @media (min-width: 500px) {
+      font-size: 50px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 56px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 80px;
+    }
   }
 
   &.title--h2 {

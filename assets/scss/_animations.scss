@@ -104,3 +104,15 @@
     transform: scale(1);
   }
 }
+
+@keyframes shineSweep {
+  0% {
+    transform: translateX(-100%) skewX(10deg);
+  }
+  30% {
+    transform: translateX(100%) skewX(10deg);
+  }
+  100% {
+    transform: translateX(100%) skewX(10deg);
+  }
+}

@@ -22,6 +22,11 @@
       </span>
     </div>
 
+    <!--ФИКСИРОВАННАЯ КНОПКА-->
+    <div class="fix-button">
+      <button type="button" class="button" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
+    </div>
+
     <!--HEADER-->
     <header class="header">
       <div class="container">
@@ -58,42 +63,41 @@
     <main class="main">
       <!--HERO-->
       <section class="section section--hero" id="hero">
-        <div class="container">
-          <h1 class="title title--h1 gold">Вкус как <br />искусство</h1>
-          <video src="./assets/img/main_animation.webm" autoplay muted loop playsinline class="main-animation"></video>
+        <div class="hero">
+          <div class="container">
+            <h1 class="title title--h1 gold">Вкус как <br />искусство</h1>
+            <video src="./assets/img/main_animation.webm" autoplay muted loop playsinline class="main-animation"></video>
 
-          <div class="timer">
-            <div class="main-prize">
-              <img src="./assets/img/prizes/main.webp" alt="President" />
+            <div class="timer">
+              <div class="main-prize">
+                <img src="./assets/img/prizes/main.webp" alt="President" />
+              </div>
+
+              <!-- <h2 class="title title--h3 gold">До старта акции</h2>
+
+              <ul class="countdown" data-countdown>
+                <li>
+                  <p>дни</p>
+                  <b data-days class="gold">22</b>
+                </li>
+                <li>
+                  <p>часы</p>
+                  <b data-hours class="gold">8</b>
+                </li>
+                <li>
+                  <p>минуты</p>
+                  <b data-minutes class="gold">22</b>
+                </li>
+                <li>
+                  <p>сукунды</p>
+                  <b data-seconds class="gold">22</b>
+                </li>
+              </ul> -->
             </div>
-
-            <h2 class="title title--h3 gold">До старта акции</h2>
-
-            <ul class="countdown" data-countdown>
-              <li>
-                <p>дни</p>
-                <b data-days class="gold">22</b>
-              </li>
-              <li>
-                <p>часы</p>
-                <b data-hours class="gold">8</b>
-              </li>
-              <li>
-                <p>минуты</p>
-                <b data-minutes class="gold">22</b>
-              </li>
-              <li>
-                <p>сукунды</p>
-                <b data-seconds class="gold">22</b>
-              </li>
-            </ul>
           </div>
         </div>
-      </section>
 
-      <!--ПРАВИЛА-->
-      <section class="section section--rules lines--bg" id="rules">
-        <div class="rules">
+        <div class="rules" id="rules">
           <div class="container">
             <ul>
               <li>
@@ -127,7 +131,10 @@
             </ul>
           </div>
         </div>
+      </section>
 
+      <!--ПРАВИЛА-->
+      <section class="section section--rules lines--bg">
         <div class="container">
           <div class="rules-options">
             <div class="rules-option left">
