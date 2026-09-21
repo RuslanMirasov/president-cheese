@@ -50,8 +50,8 @@
   margin: 20px -20px 0px auto;
   pointer-events: none;
   z-index: 2;
-  filter: drop-shadow(-3.25px 5.69px 14.23px rgba(0, 0, 0, 0.19)) drop-shadow(-13.42px 22.36px 26.02px rgba(0, 0, 0, 0.16))
-    drop-shadow(-29.68px 50px 34.96px rgba(0, 0, 0, 0.1)) drop-shadow(-53.26px 88.63px 41.47px rgba(0, 0, 0, 0.03));
+  // filter: drop-shadow(-3.25px 5.69px 14.23px rgba(0, 0, 0, 0.19)) drop-shadow(-13.42px 22.36px 26.02px rgba(0, 0, 0, 0.16))
+  //   drop-shadow(-29.68px 50px 34.96px rgba(0, 0, 0, 0.1)) drop-shadow(-53.26px 88.63px 41.47px rgba(0, 0, 0, 0.03));
 
   @media (min-width: 1024px) {
     display: block;
@@ -113,75 +113,6 @@
   @media (min-width: 2000px) {
     .main-prize {
       height: 320px;
-    }
-  }
-}
-
-.countdown {
-  display: flex;
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  gap: 10px;
-  margin-top: 10px;
-  padding-bottom: 72px;
-  @media (min-width: 500px) {
-    max-width: 384px;
-  }
-
-  li {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    flex: 1;
-    border-radius: 14px;
-    background: var(--golden-gradient);
-    text-align: center;
-    padding: 10px;
-    @media (min-width: 500px) {
-      padding: 12px;
-    }
-    > * {
-      display: block;
-      position: relative;
-      z-index: 1;
-    }
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 1px;
-      top: 1px;
-      width: calc(100% - 2px);
-      height: calc(100% - 2px);
-      border-radius: 14px;
-      background: var(--red-text);
-      z-index: 0;
-    }
-
-    p {
-      font-size: 12px;
-      line-height: 1px;
-      margin-bottom: 16px;
-    }
-
-    b {
-      font-size: 32px;
-      line-height: 1;
-    }
-
-    @media (min-width: 500px) {
-      p {
-        font-size: 14px;
-      }
-
-      b {
-        font-size: 40px;
-      }
     }
   }
 }
