@@ -32,5 +32,29 @@ export function goToSlide(target, { key, base = 1 } = {}) {
   swiper.slideTo(idx);
 }
 
+export function nextSlide(key) {
+  const swiper = REGISTRY[key];
+
+  if (!swiper) {
+    console.warn('[nextSlide] swiper not found:', key);
+    return;
+  }
+
+  swiper.slideNext();
+}
+
+export function prevSlide(key) {
+  const swiper = REGISTRY[key];
+
+  if (!swiper) {
+    console.warn('[prevSlide] swiper not found:', key);
+    return;
+  }
+
+  swiper.slidePrev();
+}
+
 window.goToSlide = goToSlide;
+window.nextSlide = nextSlide;
+window.prevSlide = prevSlide;
 window.registerNamedSwiper = registerNamedSwiper;

@@ -19,6 +19,7 @@ export const initSliders = () => {
         initialSlide = '0,0,0',
         direction = 'horizontal',
         allowTouchMove = 'true',
+        paginationType = 'fraction',
       } = sliderWrapper.dataset;
 
       const arrowPrev = sliderWrapper.querySelector('[data-arrow-prev]');
@@ -67,6 +68,10 @@ export const initSliders = () => {
           el: pagination,
           clickable: true,
           dynamicBullets: true,
+          type: paginationType,
+          renderFraction: (currentClass, totalClass) => {
+            return `<span class="${currentClass}"></span>/<span class="${totalClass}"></span>`;
+          },
         };
       }
 

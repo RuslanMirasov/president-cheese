@@ -193,7 +193,7 @@ body.locked {
 .red-wrapper {
   display: flex;
   flex-direction: column;
-  background: var(--bg);
+  background: linear-gradient(100deg, #5e1108, #a81616);
   padding: 50px 30px 30px 30px;
   border-radius: 24px;
   @media (max-width: 767px) {

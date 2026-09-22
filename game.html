@@ -9,9 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/dropzone.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/choices.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.min.css" />
-    <title>President | Личный кабинет</title>
+    <title>President</title>
   </head>
+
   <body class="body">
     <!--PRELOADER-->
     <div class="preloader" data-preloader>
@@ -31,18 +33,18 @@
 
         <nav class="navigation">
           <ul class="menu">
-            <li><a href="./" class="menu__link">Промо</a></li>
-            <li><a class="menu__link">Галерея шедевров</a></li>
-            <li><a class="menu__link" data-popup-open="production">Продукты</a></li>
-            <li><a class="menu__link" data-popup-open="markets">Где купить?</a></li>
+            <li><a href="./#hero" class="menu__link">Промо</a></li>
+            <li><a href="./#gallery" class="menu__link">Галерея шедевров</a></li>
+            <li><a href="./#products" class="menu__link">Продукты</a></li>
+            <li><a href="./#markets" class="menu__link">Где купить?</a></li>
             <li><a href="./game.html" class="menu__link">Игра</a></li>
-            <li><a href="./" class="menu__link">Призы</a></li>
-            <li><a href="./" class="menu__link">Победители</a></li>
-            <li><a href="./" class="menu__link">Правила</a></li>
+            <li><a href="./#gallery" class="menu__link">Призы</a></li>
+            <li><a href="./#winners" class="menu__link">Победители</a></li>
+            <li><a href="./#rules" class="menu__link">Правила</a></li>
             <li><a class="menu__link" data-popup-open="faq">FAQ</a></li>
             <li class="header__buttons">
               <button class="button button--small" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
-              <a href="./lk.html" class="login-btn"><span>Профиль</span></a>
+              <button class="login-btn" data-popup-open="login"><span>Вход</span></button>
             </li>
           </ul>
         </nav>
@@ -54,196 +56,122 @@
     </header>
 
     <main class="main">
-      <section class="section section--lk border-bottom">
+      <!--HERO-->
+      <section class="section section--game lines--bg" data-slider="masterpiece-slider" data-pagination-type="fraction" data-allow-touch-move="false">
         <div class="container">
-          <!--LK Head-->
-          <ul class="lk-head">
-            <li>
-              <h1 class="lk-head__title">Константинопольский Пантелеймон Александрович</h1>
-              <div class="contacts">
-                <p>E-mail: <a href="mailto:panteleymon@gmail.ru">panteleymon@gmail.ru</a></p>
-                <p>Телефон: <a href="tel:+790090000">+7 900 900 00</a></p>
+          <div class="game-controls">
+            <div data-pagination></div>
+            <h1 class="title title--h2 gold">Угадай шедевр!</h1>
+            <p>Угадай это подлинник или&nbsp;это&nbsp;проделки&nbsp;ИИ.</p>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="masterpiece">
+                    <div class="image">
+                      <img src="./assets/img/game/1.webp" alt="President" />
+                    </div>
+                    <div class="border-text">
+                      <p>Иван Грозный <br />убивает сына</p>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              <button type="button" class="logout-button">
-                <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M19 10.0721L20.1594 9.04144C20.6068 8.64365 20.6068 7.94451 20.1594 7.54672L19 6.51601"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M20 8.29414H12M5 15.4064C2.79086 15.4064 1 13.8143 1 11.8503V4.73801C1 2.77402 2.79086 1.18188 5 1.18188M5 15.4064C7.20914 15.4064 9 13.8143 9 11.8503V4.73801C9 2.77402 7.20914 1.18188 5 1.18188M5 15.4064H13C15.2091 15.4064 17 13.8143 17 11.8503M5 1.18188H13C15.2091 1.18188 17 2.77402 17 4.73801"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-            </li>
-            <li>
-              <b class="lk-head__title">Найди пары</b>
-              <p>
-                Для&nbsp;ежедневного розыгрыша специального приза понадобятся чек&nbsp;и&nbsp;
-                <a class="link" data-popup-open="memory">пройденная игра</a>, которые не&nbsp;участвовали в&nbsp;предыдущие дни
-              </p>
-            </li>
-          </ul>
-
-          <!--Мои чеки-->
-          <div class="lk-content">
-            <h2 class="title title--h2">Мои чеки</h2>
-
-            <!-- <p class="subtitle">Загруженных чеков нет</p> -->
-
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Дата</th>
-                  <th>Чек</th>
-                  <th>Статус</th>
-                  <th>Категория</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>125 1234 123456</td>
-                  <td>Принят</td>
-                  <td>Отдых и релакс</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>125 1234 123456</td>
-                  <td>Принят</td>
-                  <td>Дом и уют</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>125 1234 123456</td>
-                  <td>Принят</td>
-                  <td>Техника и гаджеты</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!--PAGINATION-->
-            <ul class="pagination">
-              <li>
-                <button href="#" class="pagination-btn prev" disabled>
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M7.27783 1.48193L1.35191 7.90169L7.27783 14.3214"
-                      stroke="#CC0102"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </li>
-              <li><a href="#" class="pagination-btn active">1</a></li>
-              <li><a href="#" class="pagination-btn">2</a></li>
-              <li><a href="#" class="pagination-btn">3</a></li>
-              <li><a href="#" class="pagination-btn">4</a></li>
-              <li>
-                <button class="pagination-btn next">
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.72217 14.519L7.64809 8.09929L1.72217 1.67954"
-                      stroke="#CC0102"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </li>
-            </ul>
-
-            <button type="button" class="button" data-popup-open="cheque"><span>ЗАГРУЗИТЬ ЧЕК</span></button>
-          </div>
-
-          <!--Мои призы-->
-          <div class="lk-content">
-            <h2 class="title title--h2">Мои призы</h2>
-
-            <!-- <p class="subtitle">Загрузи чек и участвуй <br />в&nbsp;розыгрыше призов</p> -->
-
-            <table class="table">
-              <thead>
-                <tr>
-                  <th colspan="2">Дата</th>
-                  <th>Приз</th>
-                  <th colspan="2">Категория</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td><img src="./assets/img/prizes/ozon-500.webp" /></td>
-                  <td>Электронный сертификат «OZON» номиналом 500 (пятьсот) рублей</td>
-                  <td>Отдых и&nbsp;релакс</td>
-                  <td>
-                    <a href="#" class="button"><span>Получить</span></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td><img src="./assets/img/prizes/cozy-home.webp" /></td>
-                  <td>Электронный сертификат «Cozy Home» номиналом 4&nbsp;000 рублей</td>
-                  <td>Дом и&nbsp;уют</td>
-                  <td>
-                    <a href="#" class="button"><span>Получить</span></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td><img src="./assets/img/prizes/yandex-plus.webp" /></td>
-                  <td>Электронный сертификат Яндекс.Плюс на&nbsp;100 (сто) баллов</td>
-                  <td>Техника и&nbsp;гаджеты</td>
-                  <td>
-                    <a href="#" class="button"><span>Получить</span></a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!--PAGINATION-->
-            <ul class="pagination">
-              <li>
-                <button href="#" class="pagination-btn prev" disabled>
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M7.27783 1.48193L1.35191 7.90169L7.27783 14.3214"
-                      stroke="#CC0102"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </li>
-              <li><a href="#" class="pagination-btn active">1</a></li>
-              <li><a href="#" class="pagination-btn">2</a></li>
-              <li><a href="#" class="pagination-btn">3</a></li>
-              <li><a href="#" class="pagination-btn">4</a></li>
-              <li>
-                <button class="pagination-btn next">
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.72217 14.519L7.64809 8.09929L1.72217 1.67954"
-                      stroke="#CC0102"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </li>
-            </ul>
+            <div class="buttons">
+              <button type="button" class="button" onclick="nextSlide('masterpiece-slider')"><span>Подлинник</span></button>
+              <button type="button" class="button button--white" onclick="prevSlide('masterpiece-slider')"><span>Проделки ИИ</span></button>
+            </div>
           </div>
         </div>
       </section>
@@ -327,10 +255,19 @@
                   <span class="label__text">Телефон</span>
                   <input type="tel" name="phone" class="input" required placeholder="+7 ___ ___-__-__" autocomplete="off" />
                 </label>
-                <label class="label">
-                  <input type="checkbox" name="agree" class="checkbox" required />
-                  <span class="label__text">Я соглашаюсь с&nbsp;<a href="#" class="link">Правилами</a> </span>
-                </label>
+                <fieldset>
+                  <label class="label">
+                    <input type="checkbox" name="agree" class="checkbox" required />
+                    <span class="label__text">Я соглашаюсь с&nbsp;<a href="#" class="link">Правилами промоакции</a> </span>
+                  </label>
+                  <label class="label">
+                    <input class="checkbox" required type="checkbox" name="RegistrationInput.PersonalConfirmation" />
+                    <span class="label__text">
+                      Я соглашаюсь с&nbsp;<a href="/assets/pdf/rules.pdf?v=2" class="link">Соглашением на обработку персональных данных</a>
+                    </span>
+                  </label>
+                </fieldset>
+
                 <button type="submit" class="button button--submit full"><span>Зарегистрироваться</span></button>
               </form>
             </div>
@@ -398,58 +335,225 @@
         <div class="popup-content" id="faq">
           <button class="popup-close" data-popup-close></button>
           <h4 class="title title--h4 gold">Часто задаваемые вопросы</h4>
-          <ul class="faq" data-accordeons>
+          <ul class="faq" data-accordeons="">
             <li class="accordeon">
-              <div class="question" data-accordeon-toggle>
-                <p>Оригинальная рецептура</p>
+              <div class="question" data-accordeon-toggle="">
+                <p>КАК ПРИНЯТЬ УЧАСТИЕ В АКЦИИ?</p>
+              </div>
+              <div class="answer" style="height: 0px">
+                <div class="answer__content">
+                  <p>Чтобы стать участником Акции, необходимо:</p>
+                  <p>— Совершить покупку Продукции, из списка Продукции, участвующей в Акции, в количестве минимум 1 (одна) штука:</p>
+                  <ul>
+                    <li>Сыр мягкий President Brie Double Cream с белой плесенью 73% 6х200г Paper</li>
+                    <li>Сыр мягкий President Brie Double Cream с белой плесенью вес. 73% Box</li>
+                    <li>Сыр мягкий President Brie с белой плесенью 60% 6х200г Carton Shell</li>
+                    <li>Сыр мягкий President Brie с белой плесенью вес. 60% Box</li>
+                    <li>Сыр мягкий President Camembert Grill с белой плесенью 45% 3х250г Carton Shell</li>
+                    <li>Сыр мягкий President Camembert с белой плесенью 45% 8х125г Carton Shell</li>
+                    <li>Сыр мягкий President La Brique с белой плесенью 45% 4х200г Carton Shell</li>
+                    <li>Сыр мягкий President Lingot с белой плесенью вес. 60% Box</li>
+                    <li>Сыр мягкий President Mini Snack a la Francaise с красной плесенью 60% 6х90г Flowp</li>
+                    <li>Сыр мягкий President Petit Brie с белой плесенью 60% 8х125г Carton Shell</li>
+                    <li>Сыр мягкий President Snack a la Francaise с белой плесенью 60% 6х170г Flowp</li>
+                    <li>Сыр PRESIDENT Royal Bleu c голубой плесенью 55%, без змж, 125г</li>
+                    <li>Сыр President Le Cremiot Extra Fondant с белой плесенью 60%, 200г</li>
+                    <li>Сыр PRESIDENT Royal Bleu c голубой плесенью 55%, без змж, вес.</li>
+                    <li>Сыр мягкий President Козий Snack a la Francaise из козьего молока с белой плесенью 50% 6х90г</li>
+                  </ul>
+                  <p>— Зарегистрироваться на Сайте Акции https://president-cheese.ru/.</p>
+                  <p>— Чек покупки необходимо загрузить в личный кабинет на сайте акции.</p>
+                  <p>
+                    Загружаемая фотография кассового чека должна быть четкой, легко читаемой, со считываемым QR-кодом или штрих-кодом, датой и
+                    временем совершения покупки, и иной содержащейся на кассовом чеке информацией
+                  </p>
+                  <p>
+                    — Участник Акции может поучаствовать в розыгрыше одного дополнительного приза за выигрыш в игре «Мемори», размещенной на сайте
+                    Акции https://president-cheese.ru/. Участие в игре реализуется по желанию Участника и не является обязательным условием участия в
+                    Акции или получения иных призов. Участник получает возможность сыграть в игру только после регистрации не менее одного чека
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КТО МОЖЕТ ПРИНЯТЬ УЧАСТИЕ В АКЦИИ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    К участию в Акции допускаются дееспособные физические лица, граждане Российской Федерации, достигшие 18 лет, постоянно проживающие
+                    на территории РФ. В Акции не имеют права участвовать сотрудники и представители Клиента, Агента Клиента, Организатора, Оператора,
+                    производителя Продукции, аффилированные с Организатором / Оператором/Клиентом/Агентом Клиента, производителем Продукции лица, в
+                    том числе физические лица, с которыми у Организатора / Оператора/Клиента/Агента Клиента, производителя Продукции заключены
+                    гражданско-правовые договоры на выполнение работ и/или оказание услуг; сотрудники организаций, привлекаемых к проведению Акции, а
+                    также члены их семей.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>СРОКИ ПРОВЕДЕНИЯ АКЦИИ</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>Период совершения покупки и регистрации чеков с 01.09.2025 г. по 31.10.2025 г. (включительно).</p>
+                  <p>Период выдачи призов: с 01.09.2025 г. по 07.11.2025 года (включительно)</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>ГДЕ ПРОВОДИТСЯ АКЦИЯ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>Во всех магазинах всех торговых сетей, расположенные на территории Российской Федерации.</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАКАЯ ПРОДУКЦИЯ УЧАСТВУЕТ В АКЦИИ?</p>
               </div>
               <div class="answer">
                 <div class="answer__content">
                   <ul>
-                    <li>Благородная белая плесень Geotrichum candidum</li>
-                    <li>Бархатистая корочка</li>
-                    <li>Уникальный пикантный вкус</li>
+                    <li>Сыр мягкий President Brie Double Cream с белой плесенью 73% 6х200г Paper</li>
+                    <li>Сыр мягкий President Brie Double Cream с белой плесенью вес. 73% Box</li>
+                    <li>Сыр мягкий President Brie с белой плесенью 60% 6х200г Carton Shell</li>
+                    <li>Сыр мягкий President Brie с белой плесенью вес. 60% Box</li>
+                    <li>Сыр мягкий President Camembert Grill с белой плесенью 45% 3х250г Carton Shell</li>
+                    <li>Сыр мягкий President Camembert с белой плесенью 45% 8х125г Carton Shell</li>
+                    <li>Сыр мягкий President La Brique с белой плесенью 45% 4х200г Carton Shell</li>
+                    <li>Сыр мягкий President Lingot с белой плесенью вес. 60% Box</li>
+                    <li>Сыр мягкий President Mini Snack a la Francaise с красной плесенью 60% 6х90г Flowp</li>
+                    <li>Сыр мягкий President Petit Brie с белой плесенью 60% 8х125г Carton Shell</li>
+                    <li>Сыр мягкий President Snack a la Francaise с белой плесенью 60% 6х170г Flowp</li>
+                    <li>Сыр PRESIDENT Royal Bleu c голубой плесенью 55%, без змж, 125г</li>
+                    <li>Сыр President Le Cremiot Extra Fondant с белой плесенью 60%, 200г</li>
+                    <li>Сыр PRESIDENT Royal Bleu c голубой плесенью 55%, без змж, вес.</li>
+                    <li>Сыр мягкий President Козий Snack a la Francaise из козьего молока с белой плесенью 50% 6х90г</li>
                   </ul>
                 </div>
               </div>
             </li>
             <li class="accordeon">
-              <div class="question" data-accordeon-toggle>
-                <p>Вкус с&nbsp;историей</p>
+              <div class="question" data-accordeon-toggle="">
+                <p>СОХРАНЯТЬ ЛИ ЧЕКИ?</p>
               </div>
               <div class="answer">
                 <div class="answer__content">
-                  <ul>
-                    <li>30-е годы&nbsp;— Андре Бенье создаёт первые 17&nbsp;головок камамбера</li>
-                    <li>1968&nbsp;год&nbsp;— рождается бренд Président</li>
-                    <li>Наши дни&nbsp;— Président стал символом качества и&nbsp;традиций</li>
-                  </ul>
+                  <p>Чеки необходимо сохранять до окончания акции</p>
                 </div>
               </div>
             </li>
             <li class="accordeon">
-              <div class="question" data-accordeon-toggle>
-                <p>Изысканные сочетания</p>
+              <div class="question" data-accordeon-toggle="">
+                <p>НУЖНО ЛИ РЕГИСТРИРОВАТЬ ЧЕКИ?</p>
               </div>
               <div class="answer">
                 <div class="answer__content">
-                  <ul>
-                    <li>Идеальная пара&nbsp;— игристое, белое и&nbsp;лёгкое красное вино</li>
-                    <li>Прекрасно сочетается с&nbsp;мёдом, орехами и&nbsp;виноградом</li>
-                  </ul>
+                  <p>
+                    Чек необходимо зарегистрировать в Личном кабинете Сайта чек, подтверждающий покупку Продукции согласно условиям настоящих Правил.
+                    Фотография (изображение) чека должна быть чёткой, данные на чеке – однозначно читаемыми, чек должен быть отображен на фотографии
+                    полностью. Также Участник может воспользоваться опцией Сайта и вбить данные чека вручную в соответствующем разделе Личного
+                    кабинета.
+                  </p>
                 </div>
               </div>
             </li>
             <li class="accordeon">
-              <div class="question" data-accordeon-toggle>
-                <p>Ассортимент</p>
+              <div class="question" data-accordeon-toggle="">
+                <p>СКОЛЬКО РАЗ Я МОГУ ПОКУПАТЬ ПРОДУКЦИЮ "PRESEDENT" И УЧАСТВОВАТЬ В АКЦИИ В ТЕЧЕНИИ АКЦИИ?</p>
               </div>
               <div class="answer">
                 <div class="answer__content">
+                  <p>
+                    Каждый участник для участия в розыгрыше Призов может зарегистрировать не более 15 (пятнадцати) чеков в каждую неделю периода
+                    Акции.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАК ПРОВОДИТСЯ РОЗЫГРЫШ ПРИЗОВ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>Розыгрыш еженедельных призов происходит в соответствии с датами ниже:</p>
                   <ul>
-                    <li>Классический Camembert Président</li>
-                    <li>Camembert Grill&nbsp;— идеально для&nbsp;жарки и&nbsp;запекания</li>
+                    <li>1-я неделя – с 01.09.2025 г. по 07.09.2025 г. включительно;</li>
+                    <li>2-я неделя – с 08.09.2025 г. по 14.09.2025 г. включительно;</li>
+                    <li>3-я неделя – с 15.09.2025 г. по 21.09.2025 г. включительно;</li>
+                    <li>4-я неделя – с 22.09.2025 г. по 28.09.2025 г. включительно;</li>
+                    <li>5-я неделя – с 29.09.2025 г. по 05.10.2025 г. включительно;</li>
+                    <li>6-я неделя – с 06.10.2025 г. по 12.10.2025 г. включительно;</li>
+                    <li>7-я неделя – с 13.10.2025 г. по 19.10.2025 г. включительно;</li>
+                    <li>8-я неделя – с 20.10.2025 г. по 26.10.2025 г. включительно;</li>
+                    <li>9-я неделя – с 27.10.2025 г. по 31.10.2025 г. включительно;</li>
                   </ul>
+                  <p>Розыгрыш главных призов акции будет произведен:</p>
+                  <ul>
+                    <li>За период с 01.09.2025 г. по 30.09.2025 г.– 08.10.2025 г.;</li>
+                    <li>За период с 01.10.2025 г. по 31.10.2025 г.– 05.11.2025 г.;</li>
+                  </ul>
+                  <p>Розыгрыш призов проводится в соответствии с формулами, указанными в правилах акции, в разделе 8</p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАК Я УЗНАЮ, ЧТО СТАЛ ПОБЕДИТЕЛЕМ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Организаторы акции свяжутся с вами по электронной почте, указанной в личном кабинете на сайте акции. Также результаты всех
+                    розыгрышей, будут публиковаться на Сайте Акции https://president-cheese.ru/.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КАК ПРОИСХОДИТ ВРУЧЕНИЕ ПРИЗОВ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Все призы вручаются путем отправления электронного сертификата на электронную почту победителя, указанную при регистрации на сайте
+                    Акции https://president-cheese.ru/.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>КТО УПЛАЧИВАЕТ НАЛОГ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Организатор акции выступает налоговым агентом, предоставляет в налоговые органы сведения о доходах физических лиц в связи с
+                    вручением им призов, а также в полном объёме удерживает денежную часть еженедельного и главного призов и уплачивает налог на
+                    доходы физических лиц из данной дополнительной денежной награды
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle="">
+                <p>ЧТО ДЕЛАТЬ, ЕСЛИ У МЕНЯ ВОЗНИКЛИ ДОПОЛНИТЕЛЬНЫЕ ВОПРОСЫ ПО ПРОВЕДЕНИЮ АКЦИИ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Если у вас возникли ещё вопросы, вы можете связаться с организаторами акции по электронной почте:
+                    <a href="mailto:info@kamamber-promo.ru">info@kamamber-promo.ru</a>
+                  </p>
                 </div>
               </div>
             </li>
@@ -744,6 +848,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/choices.min.js"></script>
     <script src="./assets/js/forms.js" type="module"></script>
     <script src="./assets/js/scripts.js" type="module"></script>
     <script src="./assets/js/dropzone.min.js"></script>
