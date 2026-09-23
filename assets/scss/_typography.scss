@@ -42,6 +42,7 @@
 
   &.title--h2 {
     font-size: 60px;
+    line-height: 1.1;
     text-align: center;
     @media (max-width: 767px) {
       font-size: 40px;
@@ -59,6 +60,11 @@
   &.title--h4 {
     font-size: 30px;
     line-height: 1.12;
+  }
+
+  &.title--h5 {
+    font-size: 28px;
+    line-height: 1.2;
   }
 
   &.title--hero {

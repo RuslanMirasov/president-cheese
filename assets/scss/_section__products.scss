@@ -6,6 +6,20 @@
     text-align: center;
     margin-top: 16px;
   }
+
+  &.single {
+    padding-top: 140px;
+
+    .products {
+      gap: 60px 120px;
+      max-width: 1280px;
+      justify-content: center;
+    }
+
+    .border-text {
+      margin-top: 50px;
+    }
+  }
 }
 
 .products {
@@ -132,6 +146,19 @@
 
 //375
 @media (max-width: 767px) {
+  .section--products {
+    &.single {
+      padding-top: 100px;
+
+      .products {
+        gap: 60px;
+      }
+
+      .border-text {
+        margin-top: 30px;
+      }
+    }
+  }
   .products {
     li:nth-child(2) {
       order: 0;

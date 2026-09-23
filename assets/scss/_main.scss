@@ -43,6 +43,7 @@
       background: url('../img/bg-lines.webp') repeat left top;
       background-size: 1402px 100px;
       opacity: 0.3;
+      pointer-events: none;
     }
   }
   @media (max-width: 1151px) {

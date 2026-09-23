@@ -22,6 +22,11 @@
       </span>
     </div>
 
+    <!--ФИКСИРОВАННАЯ КНОПКА-->
+    <div class="fix-button">
+      <button type="button" class="button" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
+    </div>
+
     <!--HEADER-->
     <header class="header">
       <div class="container">
@@ -56,123 +61,123 @@
     </header>
 
     <main class="main">
-      <!--HERO-->
-      <section class="section section--game lines--bg" data-slider="masterpiece-slider" data-pagination-type="fraction" data-allow-touch-move="false">
+      <!--ПРОДУКТЫ-->
+      <section class="section section--products single" id="products">
         <div class="container">
-          <div class="game-controls">
-            <div data-pagination></div>
-            <h1 class="title title--h2 gold">Угадай шедевр!</h1>
-            <p>Угадай это подлинник или&nbsp;это&nbsp;проделки&nbsp;ИИ.</p>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="masterpiece">
-                    <div class="image">
-                      <img src="./assets/img/game/1.webp" alt="President" />
-                    </div>
-                    <div class="border-text">
-                      <p>Иван Грозный <br />убивает сына</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <h2 class="title title--h2 red">Продукты</h2>
+          <p class="subtitle red">участвующие в акции</p>
 
-            <div class="buttons">
-              <button type="button" class="button" onclick="nextSlide('masterpiece-slider')"><span>Подлинник</span></button>
-              <button type="button" class="button button--white" onclick="prevSlide('masterpiece-slider')"><span>Проделки ИИ</span></button>
-            </div>
-          </div>
+          <ul class="products">
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/1.webp" alt="Camembert" />
+              </div>
+
+              <div class="border-text">
+                <p>Camembert <br />125г</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/2.webp" alt="Cremiot" />
+              </div>
+
+              <div class="border-text">
+                <p>Cremiot</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/4.webp" alt="Camembert Grill" />
+              </div>
+
+              <div class="border-text">
+                <p>Camembert Grill<br />125г</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/3.webp" alt="Petit Brie" />
+              </div>
+
+              <div class="border-text">
+                <p>Petit Brie <br />125г</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/5.webp" alt="Brie" />
+              </div>
+
+              <div class="border-text">
+                <p>Brie <br />вес</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/6.webp" alt="Brie" />
+              </div>
+
+              <div class="border-text">
+                <p>Brie <br />200г</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/7.webp" alt="Snack a la Francaise" />
+              </div>
+
+              <div class="border-text">
+                <p>Snack a la Francaise <br />170г</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/8.webp" alt="Lingot" />
+              </div>
+
+              <div class="border-text">
+                <p>Lingot</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/9.webp" alt="La Brique" />
+              </div>
+
+              <div class="border-text">
+                <p>La Brique</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/10.webp" alt="Royal Bleu" />
+              </div>
+
+              <div class="border-text">
+                <p>Royal Bleu <br />125г</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-image">
+                <img src="./assets/img/products/11.webp" alt="Royal Bleu" />
+              </div>
+
+              <div class="border-text">
+                <p>Royal Bleu</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

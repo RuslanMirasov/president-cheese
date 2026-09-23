@@ -86,6 +86,25 @@ a {
   color: inherit;
 }
 
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .custom-scrollbar {
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;

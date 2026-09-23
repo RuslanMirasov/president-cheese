@@ -99,6 +99,13 @@
       top: 0px;
       z-index: 1;
     }
+    &.no-border {
+      background: none;
+      box-shadow: none;
+      &:after {
+        content: none;
+      }
+    }
   }
   .border-text {
     margin-top: 26px;

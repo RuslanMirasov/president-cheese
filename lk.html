@@ -31,14 +31,14 @@
 
         <nav class="navigation">
           <ul class="menu">
-            <li><a href="./" class="menu__link">Промо</a></li>
-            <li><a class="menu__link">Галерея шедевров</a></li>
-            <li><a class="menu__link" data-popup-open="production">Продукты</a></li>
-            <li><a class="menu__link" data-popup-open="markets">Где купить?</a></li>
+            <li><a href="./#hero" class="menu__link">Промо</a></li>
+            <li><a href="./#gallery" class="menu__link">Галерея шедевров</a></li>
+            <li><a href="./products.html" class="menu__link">Продукты</a></li>
+            <li><a href="./#markets" class="menu__link">Где купить?</a></li>
             <li><a href="./game.html" class="menu__link">Игра</a></li>
-            <li><a href="./" class="menu__link">Призы</a></li>
-            <li><a href="./" class="menu__link">Победители</a></li>
-            <li><a href="./" class="menu__link">Правила</a></li>
+            <li><a href="./#gallery" class="menu__link">Призы</a></li>
+            <li><a href="./#winners" class="menu__link">Победители</a></li>
+            <li><a href="./#rules" class="menu__link">Правила</a></li>
             <li><a class="menu__link" data-popup-open="faq">FAQ</a></li>
             <li class="header__buttons">
               <button class="button button--small" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
@@ -54,196 +54,241 @@
     </header>
 
     <main class="main">
-      <section class="section section--lk border-bottom">
+      <section class="section section--lk lines--bg">
         <div class="container">
+          <h1 class="title title--h2 gold">Личный Кабинет</h1>
           <!--LK Head-->
-          <ul class="lk-head">
-            <li>
-              <h1 class="lk-head__title">Константинопольский Пантелеймон Александрович</h1>
-              <div class="contacts">
-                <p>E-mail: <a href="mailto:panteleymon@gmail.ru">panteleymon@gmail.ru</a></p>
-                <p>Телефон: <a href="tel:+790090000">+7 900 900 00</a></p>
+          <div class="lk-head">
+            <div class="lk-head__inner profile">
+              <div class="lk-head__text">
+                <h1 class="lk-head__title">Константинопольский Пантелеймон Александрович</h1>
+                <div class="contacts">
+                  <p>E-mail: <a href="mailto:panteleymon@gmail.ru">panteleymon@gmail.ru</a></p>
+                  <p>Телефон: <a href="tel:+790090000">+7 900 900 00</a></p>
+                </div>
+
+                <button type="button" class="logout">
+                  <img src="./assets/img/svg/logout.svg" alt="President" />
+                </button>
+              </div>
+            </div>
+
+            <div class="lk-head__inner">
+              <div class="masterpiece"><div class="image"></div></div>
+              <div class="lk-head__text">
+                <b class="lk-head__title">Угадай шедевр</b>
+                <p><a href="./game.html" class="link">Угадывай шедевры</a>, чтобы участвовать в&nbsp;розыгрыше специального приза:</p>
+                <p>Сертификат OZON 1&nbsp;000&nbsp;₽</p>
+              </div>
+            </div>
+
+            <div class="lk-head__inner">
+              <div class="masterpiece">
+                <div class="image no-border"><img src="./assets/img/rule-image2-lk.webp" alt="President" /></div>
+              </div>
+              <div class="lk-head__text">
+                <b class="lk-head__title">Аэрогриль BORK</b>
+                <p><a class="link" data-popup-open="cheque">Зарегистрируй</a> 2 чека в&nbsp;неделю, для участия в&nbsp;розыгрыше аэрогриля Bork</p>
+                <p>Зарегистрировано чеков на&nbsp;этой неделе: <strong>0</strong></p>
               </div>
 
-              <button type="button" class="logout-button">
-                <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M19 10.0721L20.1594 9.04144C20.6068 8.64365 20.6068 7.94451 20.1594 7.54672L19 6.51601"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M20 8.29414H12M5 15.4064C2.79086 15.4064 1 13.8143 1 11.8503V4.73801C1 2.77402 2.79086 1.18188 5 1.18188M5 15.4064C7.20914 15.4064 9 13.8143 9 11.8503V4.73801C9 2.77402 7.20914 1.18188 5 1.18188M5 15.4064H13C15.2091 15.4064 17 13.8143 17 11.8503M5 1.18188H13C15.2091 1.18188 17 2.77402 17 4.73801"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </button>
-            </li>
-            <li>
-              <b class="lk-head__title">Найди пары</b>
-              <p>
-                Для&nbsp;ежедневного розыгрыша специального приза понадобятся чек&nbsp;и&nbsp;
-                <a class="link" data-popup-open="memory">пройденная игра</a>, которые не&nbsp;участвовали в&nbsp;предыдущие дни
-              </p>
-            </li>
-          </ul>
-
-          <!--Мои чеки-->
-          <div class="lk-content">
-            <h2 class="title title--h2">Мои чеки</h2>
-
-            <!-- <p class="subtitle">Загруженных чеков нет</p> -->
-
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Дата</th>
-                  <th>Чек</th>
-                  <th>Статус</th>
-                  <th>Категория</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>125 1234 123456</td>
-                  <td>Принят</td>
-                  <td>Отдых и релакс</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>125 1234 123456</td>
-                  <td>Принят</td>
-                  <td>Дом и уют</td>
-                </tr>
-                <tr>
-                  <td>дд.мм.гггг</td>
-                  <td>125 1234 123456</td>
-                  <td>Принят</td>
-                  <td>Техника и гаджеты</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!--PAGINATION-->
-            <ul class="pagination">
-              <li>
-                <button href="#" class="pagination-btn prev" disabled>
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M7.27783 1.48193L1.35191 7.90169L7.27783 14.3214"
-                      stroke="#CC0102"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </li>
-              <li><a href="#" class="pagination-btn active">1</a></li>
-              <li><a href="#" class="pagination-btn">2</a></li>
-              <li><a href="#" class="pagination-btn">3</a></li>
-              <li><a href="#" class="pagination-btn">4</a></li>
-              <li>
-                <button class="pagination-btn next">
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.72217 14.519L7.64809 8.09929L1.72217 1.67954"
-                      stroke="#CC0102"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </li>
-            </ul>
-
-            <button type="button" class="button" data-popup-open="cheque"><span>ЗАГРУЗИТЬ ЧЕК</span></button>
+              <button type="button" class="button gold" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
+            </div>
           </div>
 
-          <!--Мои призы-->
-          <div class="lk-content">
-            <h2 class="title title--h2">Мои призы</h2>
+          <!--В КАКИХ РОЗЫГРШАХ Я УЧАСТВУЮ-->
+          <div class="my-activity">
+            <h2 class="title title--h3 gold">В каких розыгршах я&nbsp;участвую?</h2>
 
-            <!-- <p class="subtitle">Загрузи чек и участвуй <br />в&nbsp;розыгрыше призов</p> -->
-
-            <table class="table">
+            <table class="my-activity-table">
               <thead>
                 <tr>
-                  <th colspan="2">Дата</th>
                   <th>Приз</th>
-                  <th colspan="2">Категория</th>
+                  <th>Участвую?</th>
+                  <th>Условие</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>дд.мм.гггг</td>
-                  <td><img src="./assets/img/prizes/ozon-500.webp" /></td>
-                  <td>Электронный сертификат «OZON» номиналом 500 (пятьсот) рублей</td>
-                  <td>Отдых и&nbsp;релакс</td>
-                  <td>
-                    <a href="#" class="button"><span>Получить</span></a>
-                  </td>
+                  <td colspan="3"><p class="title title--h5">Ежедневные</p></td>
                 </tr>
                 <tr>
-                  <td>дд.мм.гггг</td>
-                  <td><img src="./assets/img/prizes/cozy-home.webp" /></td>
-                  <td>Электронный сертификат «Cozy Home» номиналом 4&nbsp;000 рублей</td>
-                  <td>Дом и&nbsp;уют</td>
-                  <td>
-                    <a href="#" class="button"><span>Получить</span></a>
-                  </td>
+                  <td>Сертификат OZON на 1 000 руб.</td>
+                  <td>Нет</td>
+                  <td>Не угадан шедевр за текущий день <a href="./game.html">Угадать&nbsp;шедевр</a></td>
+                </tr>
+
+                <tr>
+                  <td colspan="3"><p class="title title--h5">Еженедельные</p></td>
                 </tr>
                 <tr>
-                  <td>дд.мм.гггг</td>
-                  <td><img src="./assets/img/prizes/yandex-plus.webp" /></td>
-                  <td>Электронный сертификат Яндекс.Плюс на&nbsp;100 (сто) баллов</td>
-                  <td>Техника и&nbsp;гаджеты</td>
-                  <td>
-                    <a href="#" class="button"><span>Получить</span></a>
-                  </td>
+                  <td>Сертификат Яндекс Афиша на&nbsp;2&nbsp;000&nbsp;руб.</td>
+                  <td class="red">Нет</td>
+                  <td>Не зарегистрировано ни одного чека <button type="button" data-popup-open="cheque">Зарегистрировать чек</button></td>
                 </tr>
+                <tr>
+                  <td>Сертификат Gipfel на&nbsp;3&nbsp;000&nbsp;руб.</td>
+                  <td class="red">Нет</td>
+                  <td>Не зарегистрировано ни одного чека <button type="button" data-popup-open="cheque">Зарегистрировать чек</button></td>
+                </tr>
+                <tr>
+                  <td>Сертификат М.Видео на&nbsp;4&nbsp;000&nbsp;руб.</td>
+                  <td>Да</td>
+                  <td><button type="button" data-popup-open="cheque">Зарегистрировать чек</button>, чтобы повысить шансы</td>
+                </tr>
+                <tr>
+                  <td>Сертификат Леонардо на&nbsp;2&nbsp;000&nbsp;руб.</td>
+                  <td>Да</td>
+                  <td><button type="button" data-popup-open="cheque">Зарегистрировать чек</button>, чтобы повысить шансы</td>
+                </tr>
+                <tr>
+                  <td>Сертификат Cozy Home на&nbsp;3&nbsp;000&nbsp;руб.</td>
+                  <td>Да</td>
+                  <td><button type="button" data-popup-open="cheque">Зарегистрировать чек</button>, чтобы повысить шансы</td>
+                </tr>
+                <tr>
+                  <td>Аэрогриль BORK</td>
+                  <td class="red">Нет</td>
+                  <td>Зарегистрировано чеков на этой неделе: 1 из 2 <button type="button" data-popup-open="cheque">Зарегистрировать чек</button></td>
+                </tr>
+
+                <tr>
+                  <td colspan="3"><p class="title title--h5">Ежемесячные</p></td>
+                </tr>
+                <tr>
+                  <td>iPhone</td>
+                  <td>Да</td>
+                  <td><button type="button" data-popup-open="cheque">Зарегистрировать чек</button>, чтобы повысить шансы</td>
+                </tr>
+                <tr>
+                  <td>iPad</td>
+                  <td>Да</td>
+                  <td><button type="button" data-popup-open="cheque">Зарегистрировать чек</button>, чтобы повысить шансы</td>
+                </tr>
+                <tr>
+                  <td>MacBook</td>
+                  <td>Да</td>
+                  <td><button type="button" data-popup-open="cheque">Зарегистрировать чек</button>, чтобы повысить шансы</td>
+                </tr>
+
+                <tr>
+                  <td colspan="3"><strong>Главный</strong></td>
+                </tr>
+                <tr>
+                  <td>1&nbsp;000&nbsp;000&nbsp;руб. на&nbsp;коллекцию желаний</td>
+                  <td>Да</td>
+                  <td><button type="button" data-popup-open="cheque">Зарегистрировать чек</button>, чтобы повысить шансы</td>
+                </tr>
+
+                <!--ВЫВОД СООБЩЕНИЯ ЕСЛИ ДАННЫХ НЕТ-->
+                <!-- <tr>
+                  <td colspan="3" class="empty">Загруженных чеков нет</td>
+                </tr> -->
               </tbody>
             </table>
+          </div>
 
-            <!--PAGINATION-->
-            <ul class="pagination">
-              <li>
-                <button href="#" class="pagination-btn prev" disabled>
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M7.27783 1.48193L1.35191 7.90169L7.27783 14.3214"
-                      stroke="#CC0102"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </li>
-              <li><a href="#" class="pagination-btn active">1</a></li>
-              <li><a href="#" class="pagination-btn">2</a></li>
-              <li><a href="#" class="pagination-btn">3</a></li>
-              <li><a href="#" class="pagination-btn">4</a></li>
-              <li>
-                <button class="pagination-btn next">
-                  <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M1.72217 14.519L7.64809 8.09929L1.72217 1.67954"
-                      stroke="#CC0102"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </li>
-            </ul>
+          <!--МОИ ЧЕКИ И ПРИЗЫ-->
+          <div class="my-cheques">
+            <div class="lk-table">
+              <h2 class="title title--h5 gold">Мои чеки</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Дата</th>
+                    <th>Чек</th>
+                    <th>Статус</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>дд.мм.гггг</td>
+                    <td>125 1234 123456</td>
+                    <td>Принят</td>
+                  </tr>
+                  <tr>
+                    <td>дд.мм.гггг</td>
+                    <td>125 1234 123456</td>
+                    <td>Отклонён</td>
+                  </tr>
+                  <tr>
+                    <td>дд.мм.гггг</td>
+                    <td>125 1234 123456</td>
+                    <td>Принят</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <!--pagination-->
+              <ul class="pagination gold">
+                <li>
+                  <button href="#" class="pagination-btn prev" disabled>
+                    <img src="./assets/img/svg/prev.svg" alt="" />
+                  </button>
+                </li>
+                <li>
+                  <a href="#" class="pagination-btn active"><span>1</span></a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-btn"><span>2</span></a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-btn"><span>3</span></a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-btn"><span>4</span></a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-btn"><span>5</span></a>
+                </li>
+                <li>
+                  <a href="#" class="pagination-btn"><span>6</span></a>
+                </li>
+                <li>
+                  <button class="pagination-btn next">
+                    <img src="./assets/img/svg/next.svg" alt="" />
+                  </button>
+                </li>
+              </ul>
+
+              <button type="button" class="button" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
+            </div>
+
+            <div class="lk-table">
+              <h2 class="title title--h5 gold">Мои призы</h2>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Дата</th>
+                    <th>Приз</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>дд.мм.гггг</td>
+                    <td>Деньги на телефон 100&nbsp;₽</td>
+                    <td>
+                      <button type="button" class="button"><span>Получить приз</span></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>дд.мм.гггг</td>
+                    <td>MacBook</td>
+                    <td>
+                      <button type="button" class="button"><span>Получить приз</span></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>дд.мм.гггг</td>
+                    <td>Деньги на телефон 100&nbsp;₽</td>
+                    <td>
+                      <button type="button" class="button"><span>Получить приз</span></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
