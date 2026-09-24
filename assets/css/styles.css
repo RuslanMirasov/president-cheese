@@ -1054,7 +1054,7 @@ table {
     padding: 100px 30px 40px 30px;
     background: linear-gradient(100deg, #5e1108, #a81616);
     width: 100%;
-    max-width: 768px;
+    max-width: 100%;
     min-height: 100svh;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -1330,6 +1330,7 @@ table {
 @media (max-width: 1151px) {
   .login-btn {
     font-size: 24px;
+    font-weight: 500;
   }
   .login-btn:after {
     width: 32px;
