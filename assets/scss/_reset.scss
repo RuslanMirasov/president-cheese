@@ -146,9 +146,10 @@ table {
 
 .link {
   color: var(--yellow);
-  text-decoration: underline;
+  border-bottom: 1px solid var(--yellow);
   cursor: pointer;
   &.link--white {
     color: var(--white);
+    border-bottom: 1px solid var(--white);
   }
 }

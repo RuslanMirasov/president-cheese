@@ -35,7 +35,7 @@
             <li><a href="./#gallery" class="menu__link">Галерея шедевров</a></li>
             <li><a href="./products.html" class="menu__link">Продукты</a></li>
             <li><a href="./#markets" class="menu__link">Где купить?</a></li>
-            <li><a href="./game.html" class="menu__link">Игра</a></li>
+            <li><a class="menu__link" data-popup-open="game-welcome">Игра</a></li>
             <li><a href="./#gallery" class="menu__link">Призы</a></li>
             <li><a href="./#winners" class="menu__link">Победители</a></li>
             <li><a href="./#rules" class="menu__link">Правила</a></li>
@@ -77,7 +77,7 @@
               <div class="masterpiece"><div class="image"></div></div>
               <div class="lk-head__text">
                 <b class="lk-head__title">Угадай шедевр</b>
-                <p><a href="./game.html" class="link">Угадывай шедевры</a>, чтобы участвовать в&nbsp;розыгрыше специального приза:</p>
+                <p><a class="link" data-popup-open="game-closed">Угадывай шедевры</a>, чтобы участвовать в&nbsp;розыгрыше специального приза:</p>
                 <p>Сертификат OZON 1&nbsp;000&nbsp;₽</p>
               </div>
             </div>
@@ -115,7 +115,7 @@
                 <tr>
                   <td>Сертификат OZON на 1 000 руб.</td>
                   <td>Нет</td>
-                  <td>Не угадан шедевр за текущий день <a href="./game.html">Угадать&nbsp;шедевр</a></td>
+                  <td>Не угадан шедевр за текущий день <button type="button" data-popup-open="game-closed">Угадать&nbsp;шедевр</button></td>
                 </tr>
 
                 <tr>
@@ -315,17 +315,22 @@
           <button class="popup-close" data-popup-close></button>
           <div class="tabs" data-tabs>
             <ul class="tabs-navigation">
-              <li><button data-tab-target="1">Вход</button></li>
-              <li><button data-tab-target="2">Регистрация</button></li>
+              <li>
+                <button data-tab-target="1"><span>Вход</span></button>
+              </li>
+              <li>
+                <button data-tab-target="2"><span>Регистрация</span></button>
+              </li>
             </ul>
             <div class="tab" data-tab="1">
               <!--Login form-->
               <script>
                 function onLoginFormSubmit(e) {
                   e.preventDefault();
-                  alert('Отправлена форма логина!');
+                  window.location.href = './lk.html';
                 }
               </script>
+
               <form action="#" class="form" novalidate onsubmit="onLoginFormSubmit(event)">
                 <label class="label">
                   <span class="label__text">E-mail</span>
@@ -339,7 +344,7 @@
                   <input type="checkbox" name="remember" class="checkbox" />
                   <span class="label__text">Запомнить меня</span>
                 </label>
-                <button type="submit" class="button button--submit full"><span>Войти</span></button>
+                <button type="submit" class="button full"><span>Войти</span></button>
                 <a class="link" data-popup-open="reset-password">Восстановление пароля</a>
               </form>
             </div>
@@ -372,11 +377,20 @@
                   <span class="label__text">Телефон</span>
                   <input type="tel" name="phone" class="input" required placeholder="+7 ___ ___-__-__" autocomplete="off" />
                 </label>
-                <label class="label">
-                  <input type="checkbox" name="agree" class="checkbox" required />
-                  <span class="label__text">Я соглашаюсь с&nbsp;<a href="#" class="link">Правилами</a> </span>
-                </label>
-                <button type="submit" class="button button--submit full"><span>Зарегистрироваться</span></button>
+                <fieldset>
+                  <label class="label">
+                    <input type="checkbox" name="agree" class="checkbox" required />
+                    <span class="label__text">Я соглашаюсь с&nbsp;<a href="#" class="link">Правилами</a> </span>
+                  </label>
+                  <!-- <label class="label">
+                    <input class="checkbox" required type="checkbox" name="RegistrationInput.PersonalConfirmation" />
+                    <span class="label__text">
+                      Я соглашаюсь с&nbsp;<a href="/assets/pdf/rules.pdf?v=2" class="link">Соглашением на обработку персональных данных</a>
+                    </span>
+                  </label> -->
+                </fieldset>
+
+                <button type="submit" class="button full"><span>Зарегистрироваться</span></button>
               </form>
             </div>
           </div>
@@ -386,15 +400,9 @@
         <div class="popup-content" id="register-success">
           <button class="popup-close" data-popup-close></button>
           <div class="red-wrapper">
-            <div class="popup-image">
-              <img src="./assets/img/registration.webp" alt="" />
-            </div>
-            <h2 class="popup-title">Спасибо <br />за&nbsp;регистрацию! 🎉</h2>
-            <p class="popup-subtitle">
-              <b>Добавьте благородного вкуса в&nbsp;общение с&nbsp;нашим сырным стикерпаком в&nbsp;Telegram!</b>
-            </p>
+            <h2 class="popup-title gold">Спасибо <br />за&nbsp;регистрацию!</h2>
             <div class="buttons">
-              <a href="#" class="button button--submit full" download>Скачать стикеры</a>
+              <a href="#" class="button full" download>Скачать стикеры</a>
             </div>
           </div>
         </div>
@@ -403,7 +411,7 @@
         <div class="popup-content" id="reset-password">
           <button class="popup-close" data-popup-close></button>
           <div class="red-wrapper">
-            <h2 class="popup-title">Восстановите <br />пароль</h2>
+            <h2 class="popup-title gold">Восстановите <br />пароль</h2>
 
             <!--reset password form-->
             <script>
@@ -419,7 +427,7 @@
               </label>
 
               <div class="buttons">
-                <button type="submit" class="button button--submit full"><span>Восстановить</span></button>
+                <button type="submit" class="button full"><span>Восстановить</span></button>
               </div>
 
               <a class="link" data-popup-open="login">Авторизация</a>
@@ -431,10 +439,10 @@
         <div class="popup-content" id="reset-password-success">
           <button class="popup-close" data-popup-close></button>
           <div class="red-wrapper">
-            <h2 class="popup-title">Восстановите <br />пароль</h2>
+            <h2 class="popup-title gold">Восстановите <br />пароль</h2>
             <p class="popup-subtitle">Отправили письмо с&nbsp;инструкцией <br />по&nbsp;восстановлению пароля</p>
             <div class="buttons">
-              <button type="button" class="button button--submit full" data-popup-close>Продолжить</button>
+              <button type="button" class="button full" data-popup-close>Продолжить</button>
             </div>
           </div>
         </div>
@@ -446,7 +454,41 @@
           <ul class="faq" data-accordeons>
             <li class="accordeon">
               <div class="question" data-accordeon-toggle>
-                <p>Оригинальная рецептура</p>
+                <p>МОЖНО&nbsp;ЛИ&nbsp;ЕСТЬ КОРОЧКУ СЫРА С&nbsp;ПЛЕСЕНЬЮ?</p>
+              </div>
+              <div class="answer" style="height: 0px">
+                <div class="answer__content">
+                  <ul>
+                    <li>Благородная белая плесень Geotrichum candidum</li>
+                    <li>Бархатистая корочка</li>
+                    <li>Уникальный пикантный вкус</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle>
+                <p>ЧЕМ&nbsp;ОТЛИЧАЕТСЯ БЕЛАЯ И&nbsp;ГОЛУБАЯ ПЛЕСЕНЬ?</p>
+              </div>
+              <div class="answer">
+                <div class="answer__content">
+                  <p>
+                    Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing</a> elit. Numquam, est quia. Error eaque voluptatum maiores facere
+                    recusandae assumenda iure doloremque, dolores quas amet dolorem magnam numquam expedita quo, veritatis nisi?
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum <a href="#">dolor sit amet</a></li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordeon">
+              <div class="question" data-accordeon-toggle>
+                <p>КАК&nbsp;ПРАВИЛЬНО ХРАНИТЬ БЛАГОРОДНЫЕ СЫРЫ?</p>
               </div>
               <div class="answer">
                 <div class="answer__content">
@@ -458,42 +500,32 @@
                 </div>
               </div>
             </li>
+
             <li class="accordeon">
               <div class="question" data-accordeon-toggle>
-                <p>Вкус с&nbsp;историей</p>
+                <p>С&nbsp;ЧЕМ&nbsp;ЛУЧШЕ СОЧЕТАТЬ ТАКИЕ СЫРЫ?</p>
               </div>
               <div class="answer">
                 <div class="answer__content">
                   <ul>
-                    <li>30-е годы&nbsp;— Андре Бенье создаёт первые 17&nbsp;головок камамбера</li>
-                    <li>1968&nbsp;год&nbsp;— рождается бренд Président</li>
-                    <li>Наши дни&nbsp;— Président стал символом качества и&nbsp;традиций</li>
+                    <li>Благородная белая плесень Geotrichum candidum</li>
+                    <li>Бархатистая корочка</li>
+                    <li>Уникальный пикантный вкус</li>
                   </ul>
                 </div>
               </div>
             </li>
+
             <li class="accordeon">
               <div class="question" data-accordeon-toggle>
-                <p>Изысканные сочетания</p>
+                <p>В&nbsp;ЧЕМ&nbsp;ОТЛИЧИЕ БРИ&nbsp;ОТ&nbsp;КАМАМБЕРА?</p>
               </div>
               <div class="answer">
                 <div class="answer__content">
                   <ul>
-                    <li>Идеальная пара&nbsp;— игристое, белое и&nbsp;лёгкое красное вино</li>
-                    <li>Прекрасно сочетается с&nbsp;мёдом, орехами и&nbsp;виноградом</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="accordeon">
-              <div class="question" data-accordeon-toggle>
-                <p>Ассортимент</p>
-              </div>
-              <div class="answer">
-                <div class="answer__content">
-                  <ul>
-                    <li>Классический Camembert Président</li>
-                    <li>Camembert Grill&nbsp;— идеально для&nbsp;жарки и&nbsp;запекания</li>
+                    <li>Благородная белая плесень Geotrichum candidum</li>
+                    <li>Бархатистая корочка</li>
+                    <li>Уникальный пикантный вкус</li>
                   </ul>
                 </div>
               </div>
@@ -505,22 +537,7 @@
         <div class="popup-content" id="cheque">
           <button class="popup-close" data-popup-close></button>
           <div class="red-wrapper">
-            <h2 class="popup-title">Регистрация чека</h2>
-            <p class="popup-subtitle">Чек будет участвовать <br />в&nbsp;розыгрыше приза <br />из&nbsp;выбранной категории.</p>
-            <p class="popup-subtitle">Выбери какой приз подарит <br />тебе настоящее удовольствие.</p>
-            <div class="buttons">
-              <button class="button full" data-popup-open="cheque-info"><span>Отдых и релакс</span></button>
-              <button class="button full" data-popup-open="cheque-info"><span>Дом и уют</span></button>
-              <button class="button full" data-popup-open="cheque-info"><span>Техника и гаджеты</span></button>
-            </div>
-          </div>
-        </div>
-
-        <!--CHEQUE INFO POPUP-->
-        <div class="popup-content" id="cheque-info">
-          <button class="popup-close" data-popup-close></button>
-          <div class="red-wrapper">
-            <h2 class="popup-title">Регистрация чека</h2>
+            <h2 class="popup-title gold">Регистрация чека</h2>
             <ul class="register-check-list">
               <li>
                 <img src="./assets/img/cheque-info1.webp" alt="President" />
@@ -532,7 +549,7 @@
               </li>
               <li>
                 <img src="./assets/img/cheque-info3.webp" alt="President" />
-                <span>Фото чека должно быть:</span>
+                <b>Фото чека должно быть:</b>
                 <ul>
                   <li>чётким</li>
                   <li>с полным списком продуктов</li>
@@ -550,7 +567,7 @@
             </div>
 
             <div class="buttons">
-              <button type="button" class="button button--submit full" data-popup-open="cheque-load">
+              <button type="button" class="button full" data-popup-open="cheque-load">
                 <span>Загрузить</span>
               </button>
             </div>
@@ -561,7 +578,7 @@
         <div class="popup-content" id="cheque-load">
           <button class="popup-close" data-popup-close></button>
           <div class="red-wrapper">
-            <h2 class="popup-title">Регистрация чека</h2>
+            <h2 class="popup-title gold">Регистрация чека</h2>
 
             <!--cheque load form-->
             <script>
@@ -574,11 +591,11 @@
             <form action="#" class="dropzone" id="my-dropzone"></form>
 
             <div class="buttons">
-              <button type="submit" class="button button--submit full" onClick="onChequeLoadFormSubmit(event)">
-                <span>Загрузить</span>
+              <button type="submit" class="button full" onClick="onChequeLoadFormSubmit(event)">
+                <span>Далее</span>
               </button>
 
-              <a href="#" class="link" data-popup-open="cheque-in-self">Ввести данные чека вручную</a>
+              <a class="link" data-popup-open="cheque-in-self">Ввести данные чека вручную</a>
             </div>
           </div>
         </div>
@@ -624,8 +641,8 @@
               </label>
 
               <div class="buttons">
-                <button type="submit" class="button button--submit full"><span>Отправить</span></button>
-                <a href="#" class="link link--white" data-popup-open="cheque-load">Попробовать снова загрузить фото</a>
+                <button type="submit" class="button full"><span>Отправить</span></button>
+                <a class="link link--white" data-popup-open="cheque-load">Попробовать снова загрузить фото</a>
               </div>
             </form>
           </div>
@@ -635,88 +652,12 @@
         <div class="popup-content" id="cheque-success">
           <button class="popup-close" data-popup-close></button>
           <div class="red-wrapper">
-            <h2 class="popup-title">Чек зарегистрирован</h2>
+            <h2 class="popup-title gold">Чек зарегистрирован</h2>
             <p class="popup-subtitle">
-              <b>Ваш чек загружен успешно. <br />Следите за&nbsp;его статусом <br />в&nbsp;своём личном кабинете.</b>
+              <span>Ваш чек загружен успешно. <br />Следите за&nbsp;его статусом <br />в&nbsp;своём личном кабинете.</span>
             </p>
             <div class="buttons">
-              <button type="button" class="button button--submit full" data-popup-close>Закрыть</button>
-            </div>
-          </div>
-        </div>
-
-        <!--PRODUCTION POPUP-->
-        <div class="popup-content" id="production">
-          <button class="popup-close" data-popup-close></button>
-          <h2 class="title title--h4">Окунитесь в&nbsp;мир&nbsp;оттенков изысканного вкуса настоящего благородного сыра Président!</h2>
-          <ul class="production">
-            <li>
-              <img src="./assets/img/productions/1.webp" alt="" />
-              <h3>Brie</h3>
-              <p>Классический сыр&nbsp;с&nbsp;благородной плесенью, знаменитый своей бархатистой корочкой и&nbsp;глубоким сливочным вкусом</p>
-            </li>
-            <li>
-              <img src="./assets/img/productions/2.webp" alt="" />
-              <h3>Camembert</h3>
-              <p>Легендарный сырс&nbsp;нежной сердцевиной и&nbsp;пикантным вусом&nbsp;тонкой бархатистой&nbsp;корочки</p>
-            </li>
-            <li>
-              <img src="./assets/img/productions/3.webp" alt="" />
-              <h3>Le Cremiot Extra Fondant</h3>
-              <p>Сыр с&nbsp;нежнейшей кремовой текстурой, который буквально тает во&nbsp;рту.</p>
-            </li>
-            <li>
-              <img src="./assets/img/productions/4.webp" alt="" />
-              <h3>Royal Bleu</h3>
-              <p>
-                Сыр с&nbsp;голубой плесенью и&nbsp;уникальным вкусом, который достигается благодаря длинному сроку созревания (до&nbsp;90&nbsp;дней)
-              </p>
-            </li>
-            <li>
-              <img src="./assets/img/productions/5.webp" alt="" />
-              <h3>La Brique</h3>
-              <p>Тонкая корочка, текучая текстура и&nbsp;бесподобный вкус с&nbsp;прятными нотками тёплого молока и&nbsp;фундка</p>
-            </li>
-            <li>
-              <img src="./assets/img/productions/6.webp" alt="" />
-              <h3>Red Snack</h3>
-              <p>Уникальный насыщенный вкус с&nbsp;пикантными дымными нотками и&nbsp;сливочным послевкусием</p>
-            </li>
-          </ul>
-        </div>
-
-        <!--GAME POPUP-->
-        <div class="popup-content" id="memory">
-          <button class="popup-close" data-popup-close></button>
-          <div class="red-wrapper">
-            <ul class="memory-preview">
-              <li>
-                <div class="card">
-                  <div class="flip">
-                    <div class="flip__front"></div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="card active">
-                  <div class="flip">
-                    <div class="flip__back">
-                      <img src="./assets/img/memory/4.webp" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-            <p class="popup-subtitle">
-              <b>
-                Играй в&nbsp;игру Мемори <br />
-                и&nbsp;участвуй в&nbsp;розыгрыше <br />
-                специального приза
-              </b>
-            </p>
-            <div class="buttons">
-              <a href="./memory.html" class="button full"><span>Играть</span></a>
+              <button type="button" class="button full" data-popup-close>Закрыть</button>
             </div>
           </div>
         </div>
@@ -725,7 +666,7 @@
         <div class="popup-content" id="callback">
           <button class="popup-close" data-popup-close></button>
           <div class="red-wrapper">
-            <h2 class="popup-title">Обратная связь</h2>
+            <h2 class="popup-title gold">Обратная связь</h2>
 
             <!--callback form-->
             <script>
@@ -761,10 +702,10 @@
               </label>
               <label class="label">
                 <span class="label__text">Текст сообщения</span>
-                <textarea name="message" class="input input--textarea" required></textarea>
+                <textarea name="message" class="input input--textarea" placeholder="Сообщение" required></textarea>
               </label>
 
-              <button type="submit" class="button button--submit full"><span>Отправить</span></button>
+              <button type="submit" class="button full"><span>Отправить</span></button>
             </form>
           </div>
         </div>
@@ -773,7 +714,7 @@
         <div class="popup-content" id="callback-success">
           <button class="popup-close" data-popup-close></button>
           <div class="red-wrapper">
-            <h2 class="popup-title">Обратная связь</h2>
+            <h2 class="popup-title gold">Обратная связь</h2>
 
             <p class="success-text">
               <strong>Спасибо!</strong>
@@ -781,8 +722,44 @@
             </p>
 
             <div class="buttons">
-              <button type="button" class="button button--submit full" data-popup-close>Закрыть</button>
+              <button type="button" class="button full" data-popup-close>Закрыть</button>
             </div>
+          </div>
+        </div>
+
+        <!--GAME WELCOME POPUP-->
+        <div class="popup-content" id="game-welcome">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <div class="masterpiece">
+              <div class="image">
+                <img src="./assets/img/game/1.webp" alt="President" />
+              </div>
+            </div>
+            <h2 class="popup-title gold">Угадай шедевр!</h2>
+            <p class="popup-subtitle">
+              Проверь свои познания в&nbsp;искусстве и&nbsp;живописи. Сейчас ты&nbsp;увидишь картину. Угадай, это&nbsp;подлинник
+              или&nbsp;это&nbsp;проделки&nbsp;ИИ.
+            </p>
+            <p class="popup-subtitle">
+              Если&nbsp;ответ правильный&nbsp;— ты&nbsp;участвуешь в&nbsp;розыгрыше спецприза. Если&nbsp;же&nbsp;нет, попытай удачу в&nbsp;след.
+              раз&nbsp;или&nbsp;же&nbsp;купи продукцию на&nbsp;600&nbsp;₽ и&nbsp;участвуй в&nbsp;розыгрыше.
+            </p>
+            <a href="/game.html" class="button full"><span>Играть</span></a>
+          </div>
+        </div>
+
+        <!--GAME CLOSED POPUP-->
+        <div class="popup-content" id="game-closed">
+          <button class="popup-close" data-popup-close></button>
+          <div class="red-wrapper">
+            <div class="masterpiece">
+              <div class="image">
+                <!-- <img src="./assets/img/game/1.webp" alt="President" /> -->
+              </div>
+            </div>
+            <h2 class="popup-title gold">Сегодня ты уже играл.<br />Приходи завтра!</h2>
+            <button type="button" class="button full" data-popup-close><span>Закрыть</span></button>
           </div>
         </div>
       </div>

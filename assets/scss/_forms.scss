@@ -4,8 +4,8 @@
   --input-height: 36px;
   --input-background: #ffffff;
   --input-border: #ffffff;
-  --input-color: var(--black);
-  --input-placeholder-color: var(--black);
+  --input-color: #000000;
+  --input-placeholder-color: #000000;
   --invalid: var(--yellow);
 }
 
@@ -18,18 +18,6 @@ fieldset {
   flex-wrap: wrap;
   width: 100%;
   gap: 10px;
-
-  .link {
-    display: block;
-    font-family: var(--gilroy);
-    font-size: 14px;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .button--submit {
-    margin-bottom: 5px;
-  }
 }
 
 .label {
@@ -82,13 +70,13 @@ span.input-icon {
   width: 100%;
   height: var(--input-height);
   background: var(--input-background);
-  border: 1px solid var(--input-border);
-  border-radius: 5px;
+  border: 2px solid var(--input-border);
+  border-radius: 12px;
   font-family: var(--input-font-family);
   font-weight: 500;
   font-size: var(--input-font-size);
   color: var(--input-color);
-  padding: 0px 18px;
+  padding: 0px 12px;
   outline: none;
   appearance: none;
   transition: 0.3s;
@@ -97,7 +85,7 @@ span.input-icon {
 
   &.input--textarea {
     height: 88px;
-    padding: 10px 18px;
+    padding: 10px 12px;
   }
 
   &.input-search {
@@ -143,7 +131,7 @@ span.input-icon {
   }
 
   &.invalid {
-    border: 1px solid var(--invalid);
+    border: 2px solid var(--invalid);
     color: var(--bg-dark);
     + .input-icon {
       color: var(--invalid);
@@ -151,6 +139,7 @@ span.input-icon {
   }
 
   &:focus {
+    border: 2px solid var(--yellow);
     &::placeholder {
       opacity: 0;
     }
@@ -201,12 +190,22 @@ textarea {
     color: inherit;
     cursor: pointer;
     margin-top: 8px;
+    + .inputError {
+      top: 30px;
+      span {
+        &:before {
+          left: 9px;
+        }
+      }
+    }
 
     a {
       display: inline;
       width: auto;
       margin: 0;
       text-align: left;
+      border: none;
+      text-decoration: underline;
     }
     &:before {
       content: '';
@@ -236,7 +235,7 @@ textarea {
     + span {
       color: var(--invalid);
       &:before {
-        border: 1px solid var(--invalid);
+        border: 2px solid var(--invalid);
       }
     }
   }

@@ -3,6 +3,7 @@ export const popup = {
   _popup: null,
   _scrollY: 0,
   _isOpening: false,
+  _isLocked: false,
   _isAnimating: false,
 
   init() {
@@ -17,11 +18,43 @@ export const popup = {
     this._bindCloseEvents();
   },
 
-  async open(id) {
+  // async open(id) {
+  //   if (this._isOpening || this._isAnimating) return;
+  //   this._isOpening = true;
+
+  //   const newContent = this._popup.querySelector(`#${id}`);
+  //   if (!newContent) {
+  //     console.warn(`Попап с id="${id}" не найден`);
+  //     this._isOpening = false;
+  //     return;
+  //   }
+
+  //   const currentContent = this._popup.querySelector('.popup-content[style*="display: block"]');
+
+  //   if (currentContent && currentContent !== newContent) {
+  //     await this.close();
+  //   }
+
+  //   const alreadyVisible = this._popup.classList.contains('visible');
+
+  //   if (alreadyVisible) {
+  //     await this._switchContent(newContent);
+  //   } else {
+  //     this._scrollY = window.scrollY;
+  //     await this._showContent(newContent);
+  //   }
+
+  //   this._isOpening = false;
+  // },
+
+  async open(id, { locked = false } = {}) {
     if (this._isOpening || this._isAnimating) return;
+
     this._isOpening = true;
+    this._isLocked = locked;
 
     const newContent = this._popup.querySelector(`#${id}`);
+
     if (!newContent) {
       console.warn(`Попап с id="${id}" не найден`);
       this._isOpening = false;
@@ -31,7 +64,7 @@ export const popup = {
     const currentContent = this._popup.querySelector('.popup-content[style*="display: block"]');
 
     if (currentContent && currentContent !== newContent) {
-      await this.close();
+      await this.close(true);
     }
 
     const alreadyVisible = this._popup.classList.contains('visible');
@@ -46,44 +79,92 @@ export const popup = {
     this._isOpening = false;
   },
 
-  async close() {
+  // async close() {
+  //   if (this._isOpening || this._isAnimating) return;
+  //   this._isOpening = true;
+
+  //   this._popup.classList.remove('visible');
+  //   this._backdrop.classList.remove('active');
+
+  //   await this._waitForTransition(this._backdrop);
+  //   this._unlockScroll();
+  //   this._hideAllContent();
+
+  //   this._isOpening = false;
+  // },
+
+  async close(force = false) {
+    if (this._isLocked && !force) return;
+
     if (this._isOpening || this._isAnimating) return;
+
     this._isOpening = true;
 
     this._popup.classList.remove('visible');
     this._backdrop.classList.remove('active');
 
     await this._waitForTransition(this._backdrop);
+
     this._unlockScroll();
     this._hideAllContent();
 
+    this._isLocked = false;
     this._isOpening = false;
   },
+
+  // _bindCloseEvents() {
+  //   document.addEventListener('mousedown', e => {
+  //     if (this._isOpening || this._isAnimating) return;
+
+  //     const openBtn = e.target.closest('[data-popup-open]');
+  //     if (openBtn) {
+  //       e.preventDefault();
+  //       this.open(openBtn.dataset.popupOpen);
+  //       return;
+  //     }
+
+  //     const isCloseTarget = e.target === this._backdrop || e.target.hasAttribute('data-popup-close');
+  //     if (isCloseTarget) {
+  //       this.close();
+  //     }
+  //   });
+
+  //   document.addEventListener('keydown', e => {
+  //     if ((this._isOpening || this._isAnimating) && e.key === 'Escape') {
+  //       return;
+  //     }
+  //     if (e.key === 'Escape') {
+  //       this.close();
+  //     }
+  //   });
+  // },
 
   _bindCloseEvents() {
     document.addEventListener('mousedown', e => {
       if (this._isOpening || this._isAnimating) return;
 
       const openBtn = e.target.closest('[data-popup-open]');
+
       if (openBtn) {
         e.preventDefault();
         this.open(openBtn.dataset.popupOpen);
         return;
       }
 
-      const isCloseTarget = e.target === this._backdrop || e.target.hasAttribute('data-popup-close');
-      if (isCloseTarget) {
+      const isCloseTarget = e.target === this._backdrop || e.target.closest('[data-popup-close]');
+
+      if (isCloseTarget && !this._isLocked) {
         this.close();
       }
     });
 
     document.addEventListener('keydown', e => {
-      if ((this._isOpening || this._isAnimating) && e.key === 'Escape') {
-        return;
-      }
-      if (e.key === 'Escape') {
-        this.close();
-      }
+      if (e.key !== 'Escape') return;
+
+      if (this._isOpening || this._isAnimating) return;
+      if (this._isLocked) return;
+
+      this.close();
     });
   },
 

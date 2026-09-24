@@ -30,11 +30,21 @@
       background: rgba(0, 0, 0, 0);
       transition: 0.3s;
       font-size: 24px;
-      font-family: var(--gilroy);
+      line-height: 1;
+      font-family: var(--title);
       text-transform: uppercase;
-      padding: 0px 32px;
+      padding: 0px 30px;
+      span {
+        pointer-events: none;
+        background: var(--golden-gradient);
+        background-clip: text;
+        -webkit-background-clip: text; /* Chrome/Safari до сих пор требуют префикс */
+        color: transparent;
+        -webkit-text-fill-color: transparent; /* старый Safari игнорирует color, нужен этот */
+      }
+
       &.active {
-        background: var(--bg);
+        background: #a81616;
         pointer-events: none;
       }
     }
