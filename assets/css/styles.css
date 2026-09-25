@@ -3332,7 +3332,7 @@ body.locked {
   content: "";
   display: block;
   position: absolute;
-  width: 100vw;
+  width: 50vw;
   height: 100%;
   background: var(--golden-gradient);
   z-index: 0;
@@ -3854,7 +3854,8 @@ body.locked {
 }
 .border-text p {
   color: var(--black);
-  font-style: 18px;
+  font-size: 18px;
+  line-height: 1.2;
   font-weight: 500;
 }
 .border-text b {
@@ -3865,6 +3866,33 @@ body.locked {
 .border-text a {
   color: var(--red);
   text-decoration: underline;
+}
+
+.products-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+@media (max-width: 767px) {
+  .products-button {
+    margin-top: 40px;
+  }
+}
+.products-button .button {
+  min-width: 233px;
 }
 
 @media (max-width: 1151px) {
@@ -4882,7 +4910,7 @@ body.locked {
 }
 .my-activity-table th.red,
 .my-activity-table td.red {
-  color: var(--bg);
+  color: #ff4c4c;
 }
 .my-activity-table th:first-child,
 .my-activity-table td:first-child {

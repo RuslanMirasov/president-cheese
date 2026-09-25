@@ -88,7 +88,8 @@
 
   p {
     color: var(--black);
-    font-style: 18px;
+    font-size: 18px;
+    line-height: 1.2;
     font-weight: 500;
   }
 
@@ -101,6 +102,23 @@
   a {
     color: var(--red);
     text-decoration: underline;
+  }
+}
+
+.products-button {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  @media (max-width: 767px) {
+    margin-top: 40px;
+  }
+  .button {
+    min-width: 233px;
   }
 }
 
