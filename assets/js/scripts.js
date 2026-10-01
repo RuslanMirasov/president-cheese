@@ -6,11 +6,13 @@ import { initAccordeons } from './accordeon.js';
 import { initTabs } from './tabs.js';
 import { initSelectFields } from './forms.js';
 import { initCountdown } from './countdown.js';
+import { initGame } from './game.js';
 
 popup.init();
 window.popup = popup;
 
 initCountdown('05.10.2026 00:00:00');
+initGame();
 initNavigationMenu();
 initSliders();
 initSelectFields();
