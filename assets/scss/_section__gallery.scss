@@ -172,7 +172,11 @@
     .title--h2 + .gallery {
       margin-top: 32px;
     }
+    .main-prize {
+      margin-top: 40px;
+    }
   }
+
   .gallery {
     display: inline-flex;
     flex-direction: row;
@@ -182,26 +186,21 @@
     .swiper {
       max-width: 320px;
       .swiper-slide {
-        opacity: 1;
-        pointer-events: all;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        &.swiper-slide-active {
+          opacity: 1 !important;
+          pointer-events: all !important;
+        }
       }
     }
 
     .swiper-arrow {
-      position: relative;
-      margin-top: 0px;
-      top: 0%;
       &[data-arrow-prev] {
-        right: 0px;
-        margin-left: auto;
-        margin-right: 10px;
-        margin-top: 24px;
+        right: calc(100% - 28px);
       }
       &[data-arrow-next] {
-        left: 0px;
-        margin-right: auto;
-        margin-left: 10px;
-        margin-top: 24px;
+        left: calc(100% - 28px);
       }
     }
 

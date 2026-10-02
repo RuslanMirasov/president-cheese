@@ -374,11 +374,13 @@
       .button {
         display: inline-flex;
         width: auto;
-        min-height: 34px;
-        font-size: 14px;
-        line-height: 1;
+        height: 34px;
         padding: 12px 24px;
         float: right;
+        span {
+          font-size: 14px;
+          line-height: 1;
+        }
       }
     }
     thead {
@@ -446,9 +448,10 @@
         }
 
         .button {
-          min-height: 24px;
+          height: 26px;
           font-size: 12px;
-          padding: 4px 8px;
+          line-height: 12;
+          padding: 0px 10px;
         }
       }
       thead {

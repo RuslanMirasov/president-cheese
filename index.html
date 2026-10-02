@@ -125,7 +125,7 @@
               <div class="rules-text">
                 <b>УГАДЫВАЙТЕ ШЕДЕВРЫ</b>
                 <p>Участвуйте в розыгрыше <br />спецприза: сертификат OZON</p>
-                <button type="button" class="button button--red" data-popup-open="memory"><span>Играть</span></button>
+                <button type="button" class="button button--red" data-popup-open="game-welcome"><span>Играть</span></button>
               </div>
               <img src="./assets/img/rule-image1.webp" alt="President" class="rules-option-image top-position-in-mobil" />
             </div>
@@ -214,29 +214,34 @@
           </div>
 
           <!--Ежемесячные-->
-          <div class="gallery">
+          <div class="gallery" data-slider data-slides-per-view="3,2,1" data-space-between="32,24,12">
             <p class="subtitle big">Ежемесячные</p>
 
-            <ul class="gallery-list compact">
-              <li>
-                <div class="gallery-image"><img src="./assets/img/gallery/8.webp" alt="President" /></div>
-                <div class="border-text">
-                  <p>iPhone</p>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="gallery-image compact"><img src="./assets/img/gallery/8.webp" alt="President" /></div>
+                  <div class="border-text">
+                    <p>iPhone</p>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="gallery-image"><img src="./assets/img/gallery/9.webp" alt="President" /></div>
-                <div class="border-text">
-                  <p>iPad</p>
+                <div class="swiper-slide">
+                  <div class="gallery-image compact"><img src="./assets/img/gallery/9.webp" alt="President" /></div>
+                  <div class="border-text">
+                    <p>iPad</p>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="gallery-image"><img src="./assets/img/gallery/10.webp" alt="President" /></div>
-                <div class="border-text">
-                  <p>MacBook</p>
+                <div class="swiper-slide">
+                  <div class="gallery-image compact"><img src="./assets/img/gallery/10.webp" alt="President" /></div>
+                  <div class="border-text">
+                    <p>MacBook</p>
+                  </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
+
+            <button class="swiper-arrow delete-in-desctop" data-arrow-prev></button>
+            <button class="swiper-arrow delete-in-desctop" data-arrow-next></button>
           </div>
 
           <!--Дополнительные-->
@@ -266,42 +271,47 @@
       </section>
 
       <!--ПРОДУКТЫ-->
-      <section class="section section--products" id="products">
+      <section class="section section--products" id="products" data-slider data-slides-per-view="3,2,1">
         <div class="container">
           <h2 class="title title--h2 red">Продукты</h2>
           <p class="subtitle red">участвующие в акции</p>
 
-          <ul class="products">
-            <li>
-              <div class="product-image">
-                <img src="./assets/img/products/1.webp" alt="Camembert" />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-image">
+                  <img src="./assets/img/products/1.webp" alt="Camembert" />
+                </div>
+
+                <div class="border-text">
+                  <p>Camembert</p>
+                </div>
               </div>
 
-              <div class="border-text">
-                <p>Camembert</p>
-              </div>
-            </li>
+              <div class="swiper-slide">
+                <div class="product-image">
+                  <img src="./assets/img/products/2.webp" alt="Cremiot" />
+                </div>
 
-            <li>
-              <div class="product-image">
-                <img src="./assets/img/products/2.webp" alt="Cremiot" />
-              </div>
-
-              <div class="border-text">
-                <p>Cremiot</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-image">
-                <img src="./assets/img/products/3.webp" alt="Brie" />
+                <div class="border-text">
+                  <p>Cremiot</p>
+                </div>
               </div>
 
-              <div class="border-text">
-                <p>Brie</p>
+              <div class="swiper-slide">
+                <div class="product-image">
+                  <img src="./assets/img/products/3.webp" alt="Brie" />
+                </div>
+
+                <div class="border-text">
+                  <p>Brie</p>
+                </div>
               </div>
-            </li>
-          </ul>
+            </div>
+
+            <button class="swiper-arrow red delete-in-desctop" data-arrow-prev></button>
+            <button class="swiper-arrow red delete-in-desctop" data-arrow-next></button>
+          </div>
 
           <div class="products-button">
             <a href="./products.html" class="button button--red"><span>Вся продукция</span></a>

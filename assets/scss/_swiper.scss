@@ -42,6 +42,15 @@
       url('../img/svg/arrow-prev.svg') no-repeat center center,
       var(--golden-gradient);
     right: calc(100% + 14px);
+    &.red {
+      background:
+        url('../img/svg/arrow-prev-white.svg') no-repeat center center,
+        var(--red);
+      right: calc(100% - 50px);
+      @media (max-width: 1023px) {
+        right: calc(100% - 30px);
+      }
+    }
     @media (max-width: 1023px) {
       right: calc(100% + 8px);
     }
@@ -51,6 +60,15 @@
       url('../img/svg/arrow-next.svg') no-repeat center center,
       var(--golden-gradient);
     left: calc(100% + 14px);
+    &.red {
+      background:
+        url('../img/svg/arrow-next-white.svg') no-repeat center center,
+        var(--red);
+      left: calc(100% - 50px);
+      @media (max-width: 1023px) {
+        left: calc(100% - 30px);
+      }
+    }
     @media (max-width: 1023px) {
       left: calc(100% + 8px);
     }

@@ -20,6 +20,62 @@
       margin-top: 50px;
     }
   }
+
+  .swiper {
+    overflow: visible;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    @media (max-width: 1279px) {
+      max-width: 900px;
+      .swiper-slide {
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.5s;
+        &.swiper-slide-active,
+        &.swiper-slide-active + .swiper-slide {
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+
+      .swiper-arrow[data-arrow-next].red {
+        left: calc(100% - 0px);
+      }
+      .swiper-arrow[data-arrow-prev].red {
+        right: calc(100% - 0px);
+      }
+    }
+    @media (max-width: 1151px) {
+      max-width: 768px;
+    }
+    @media (max-width: 1023px) {
+      .swiper-arrow[data-arrow-next].red {
+        left: calc(100% - 40px);
+      }
+      .swiper-arrow[data-arrow-prev].red {
+        right: calc(100% - 40px);
+      }
+    }
+    @media (max-width: 767px) {
+      max-width: 360px;
+      .swiper-slide {
+        &.swiper-slide-active + .swiper-slide,
+        &.swiper-slide-active + .swiper-slide + .swiper-slide {
+          opacity: 0;
+          pointer-events: none;
+        }
+      }
+      .swiper-arrow[data-arrow-next].red {
+        top: 42%;
+        left: calc(100% - 30px);
+      }
+      .swiper-arrow[data-arrow-prev].red {
+        top: 42%;
+        right: calc(100% - 30px);
+      }
+    }
+  }
 }
 
 .products {
@@ -71,6 +127,11 @@
   margin-top: 30px;
   border-radius: 20px;
   text-align: center;
+  @media (max-width: 767px) {
+    border-radius: 12px;
+    width: 214px;
+    height: 48px;
+  }
 
   box-shadow:
     0px 4px 9px 0px rgba(70, 1, 1, 0.17),
@@ -80,6 +141,9 @@
 
   &.big {
     height: 160px;
+    @media (max-width: 767px) {
+      height: 121px;
+    }
     background: url('../img/text-bg-big.webp') no-repeat center center/cover;
     p {
       font-weight: 400;
@@ -91,6 +155,9 @@
     font-size: 18px;
     line-height: 1.2;
     font-weight: 500;
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 
   b {

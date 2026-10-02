@@ -158,3 +158,9 @@ table {
     display: none !important;
   }
 }
+
+@media (min-width: 1280px) {
+  .delete-in-desctop {
+    display: none !important;
+  }
+}
