@@ -23,11 +23,9 @@
     <!--HEADER-->
     <header class="header">
       <div class="container">
-        <div class="header__logo">
-          <a href="./" class="logo" aria-label="President">
-            <img src="./assets/img/svg/logo.svg" alt="President" width="80" height="66" loading="eager" />
-          </a>
-        </div>
+        <a href="./" class="header__logo" aria-label="President">
+          <img src="./assets/img/logo.webp" alt="President" width="80" height="66" loading="eager" class="logo" />
+        </a>
 
         <nav class="navigation">
           <ul class="menu">
@@ -41,11 +39,13 @@
             <li><a href="./#rules" class="menu__link">Правила</a></li>
             <li><a class="menu__link" data-popup-open="faq">FAQ</a></li>
             <li class="header__buttons">
-              <button class="button button--small" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
-              <a href="./lk.html" class="login-btn"><span>Профиль</span></a>
+              <button class="button button--small delete-in-tablet" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
+              <a href="./lk.html" class="profile-btn"><span>Личный кабинет</span></a>
             </li>
           </ul>
         </nav>
+
+        <button class="button button--small show-in-tablet" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
 
         <button class="burger">
           <span>Меню бургер</span>
@@ -302,7 +302,7 @@
         <li><a data-popup-open="callback">Обратная связь</a></li>
       </ul>
 
-      <img src="./assets/img/logo.webp" alt="President logo" class="footer-logo" />
+      <img src="./assets/img/logo-footer.webp" alt="President logo" class="footer-logo" />
 
       <p>Срок проведения акции: С ХХ января по ХХ декабря ХХХХ</p>
     </footer>

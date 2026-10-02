@@ -13,7 +13,7 @@
   z-index: 5;
   pointer-events: none;
   @media (max-width: 767px) {
-    bottom: 20px;
+    bottom: 0px;
   }
 }
 
@@ -31,28 +31,32 @@
 .button {
   display: inline-flex;
   overflow: hidden;
-  z-index: 1;
-  min-height: 52px;
+  height: 52px;
   justify-content: center;
   align-items: center;
   align-content: center;
   position: relative;
-  font-size: 18px;
-  font-family: var(--gilroy);
-  font-weight: 600;
-  line-height: 1.2;
   color: var(--red-text);
   padding: 10px 24px;
-  z-index: 1;
   transition: color 0.3s;
   user-select: none;
   outline: none;
   cursor: pointer;
   border-radius: 52px;
   background: var(--golden-gradient);
+  z-index: 2;
+  span {
+    display: block;
+    position: relative;
+    will-change: transform;
+    font-size: 18px;
+    font-family: var(--gilroy);
+    font-weight: 600;
+    line-height: 1.2;
+  }
 
   &.medium {
-    min-height: 40px;
+    height: 40px;
     font-size: 16px;
   }
   &.full {
@@ -60,27 +64,22 @@
   }
 
   &.button--small {
-    font-size: 16px;
-    min-height: 36px;
-    padding: 4px 24px;
-    border-radius: 40px;
-    color: var(--red-text);
+    height: 35px;
+    padding: 8px 24px;
     span {
-      display: block;
-      position: relative;
+      font-size: 14px;
+      line-height: 14px;
     }
     @media (max-width: 1439px) {
-      font-size: 14px;
-    }
-    @media (max-width: 1279px) {
-      font-size: 14px;
-      padding: 4px 18px;
-      min-height: 30px;
+      padding: 8px 16px;
     }
     @media (max-width: 1151px) {
-      font-size: 20px;
-      min-height: 54px;
-      padding: 4px 32px;
+      height: 30px;
+      padding: 8px 20px;
+      span {
+        font-size: 12px;
+        line-height: 12px;
+      }
     }
   }
 
@@ -152,7 +151,8 @@
   }
 }
 
-.login-btn {
+.login-btn,
+.profile-btn {
   display: inline-flex;
   position: relative;
   justify-content: center;
@@ -162,13 +162,12 @@
   color: var(--yellow);
   font-family: var(--gilroy);
   font-weight: 600;
-  font-size: 16px;
-  line-height: 18px;
 
   span {
     display: block;
     position: relative;
-    //transform: translateY(-2px);
+    font-size: 16px;
+    line-height: 16px;
   }
 
   &:after {
@@ -179,18 +178,31 @@
     background: url('../img/svg/login.svg') no-repeat center center/cover;
   }
   @media (max-width: 1279px) {
-    font-size: 14px;
+    span {
+      font-size: 12px;
+      line-height: 12px;
+    }
     &:after {
       width: 22px;
       height: 22px;
     }
   }
   @media (max-width: 1151px) {
-    font-size: 24px;
-    font-weight: 500;
+    span {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+
     &:after {
       width: 32px;
       height: 32px;
     }
+  }
+}
+
+.profile-btn {
+  &:after {
+    background: url('../img/svg/user.svg') no-repeat center center/cover;
   }
 }

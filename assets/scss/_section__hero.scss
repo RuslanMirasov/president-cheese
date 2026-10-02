@@ -23,6 +23,7 @@
 .hero {
   width: 100%;
   position: relative;
+
   @media (min-width: 1024px) {
     min-height: 44vw;
   }
@@ -32,7 +33,7 @@
   }
 
   @media (min-width: 1441px) {
-    min-height: 35vw;
+    min-height: 38vw;
   }
   .container {
     @media (min-width: 1280px) {
@@ -45,27 +46,80 @@
   display: block;
   position: relative;
   margin-left: auto;
+  margin-right: -20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
   height: auto;
-  margin: 20px -20px 0px auto;
   pointer-events: none;
   z-index: 2;
-  filter: drop-shadow(-3.25px 5.69px 14.23px rgba(0, 0, 0, 0.19)) drop-shadow(-13.42px 22.36px 26.02px rgba(0, 0, 0, 0.16))
-    drop-shadow(-29.68px 50px 34.96px rgba(0, 0, 0, 0.1)) drop-shadow(-53.26px 88.63px 41.47px rgba(0, 0, 0, 0.03));
-
+  box-shadow:
+    -8px 14px 35px 0 rgba(0, 0, 0, 0.19),
+    -33px 55px 64px 0 rgba(0, 0, 0, 0.16),
+    -73px 123px 86px 0 rgba(0, 0, 0, 0.1);
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    max-width: 768px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
   @media (min-width: 1024px) {
     display: block;
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    top: 0px;
     margin-left: auto;
-    width: 60vw;
-    margin: 0px 0px 0px 0px;
-    transform: translateY(8%);
+    margin-top: -40px;
+    margin-bottom: 0px;
+    margin-right: -20px;
+    width: 58vw;
+  }
+  @media (min-width: 1280px) {
+    margin-top: -20px;
+    width: 52vw;
+    max-width: 52vw;
+  }
+  @media (min-width: 1440px) {
+    margin-top: -50px;
+    width: 53vw;
+    max-width: 53vw;
+  }
+  @media (min-width: 1600px) {
+    margin-top: -40px;
+    width: 48vw;
+    max-width: 48vw;
+    margin-right: 0px;
   }
 
-  @media (min-width: 1441px) {
-    width: 50vw;
+  .hand {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 40%;
+    transform: translate(12%, -12%) scale(1);
+    animation: zoom-shift 10s ease-in-out infinite;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes zoom-shift {
+  0%,
+  100% {
+    transform: translate(12%, -12%) scale(1);
+  }
+  50% {
+    transform: translate(0%, -12%) scale(1.35);
   }
 }
 
@@ -81,13 +135,15 @@
 
   .main-prize {
     height: auto;
+    margin-bottom: 20px;
     img {
-      max-width: 120vw;
+      max-width: 160vw;
     }
   }
 
   @media (min-width: 1024px) {
     width: 36vw;
+    margin-bottom: 0px;
     .main-prize {
       height: 220px;
       margin-top: 50px;
@@ -98,6 +154,7 @@
       }
     }
   }
+
   @media (min-width: 1440px) {
     width: 510px;
     .main-prize {
@@ -147,11 +204,13 @@
   }
 
   @media (max-width: 499px) {
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 0px;
     .button {
       width: 100%;
+      border-radius: 0px;
     }
   }
 }

@@ -131,13 +131,6 @@ table {
   scrollbar-color: var(--color) rgba(26, 38, 99, 0.1);
 }
 
-.show_in_tablet {
-  display: none;
-  @media (max-width: 1279px) {
-    display: block;
-  }
-}
-
 .only-in-desctop {
   @media (max-width: 767px) {
     display: none;
@@ -151,5 +144,17 @@ table {
   &.link--white {
     color: var(--white);
     border-bottom: 1px solid var(--white);
+  }
+}
+
+@media (min-width: 1152px) {
+  .show-in-tablet {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1151px) {
+  .delete-in-tablet {
+    display: none !important;
   }
 }

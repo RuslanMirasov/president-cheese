@@ -240,6 +240,9 @@
   .rules {
     padding: 60px 20px;
     background: var(--golden-gradient);
+    .container {
+      padding: 0;
+    }
     ul {
       flex-direction: column;
       justify-content: center;
@@ -247,7 +250,7 @@
       align-content: center;
       gap: 50px;
       li {
-        width: 300px;
+        width: 100%;
       }
     }
 
@@ -256,8 +259,8 @@
       left: 0px;
     }
     .rules-text {
-      width: 300px;
-      padding-left: 100px;
+      width: 100%;
+      padding-left: 90px;
     }
 
     &:before {
@@ -266,11 +269,20 @@
   }
   .rules-text {
     b {
-      font-size: 24px;
+      font-size: 28px;
     }
 
     p {
       font-size: 16px;
+      font-weight: 500;
+    }
+
+    .button {
+      min-width: 210px;
+      padding: 0px 24px;
+      span {
+        font-size: 16px;
+      }
     }
   }
 
@@ -278,22 +290,37 @@
     flex: none;
     width: 100%;
     background: var(--golden-gradient);
-    padding-bottom: 280px;
+    padding: 30px 26px;
+    margin-top: -10px;
 
     &:before {
       content: none;
     }
     .rules-text {
       p {
+        max-width: 180px;
         margin: 10px 0px 20px 0px;
+        br {
+          display: none;
+        }
+      }
+      b {
+        display: block;
+        max-width: 215px;
       }
     }
   }
 
   .rules-option-image {
-    right: auto;
-    left: 50%;
-    width: 400px;
-    transform: translate(-50%, -28%) !important;
+    right: 20px;
+    width: 50%;
+    top: auto;
+    bottom: 0px;
+    transform: translate(8%, 11%) !important;
+    &.top-position-in-mobil {
+      bottom: auto;
+      top: 0px;
+      transform: translate(4%, 0%) !important;
+    }
   }
 }

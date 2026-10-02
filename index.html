@@ -30,11 +30,9 @@
     <!--HEADER-->
     <header class="header">
       <div class="container">
-        <div class="header__logo">
-          <a href="./" class="logo" aria-label="President">
-            <img src="./assets/img/svg/logo.svg" alt="President" width="80" height="66" loading="eager" />
-          </a>
-        </div>
+        <a href="./" class="header__logo" aria-label="President">
+          <img src="./assets/img/logo.webp" alt="President" width="80" height="66" loading="eager" class="logo" />
+        </a>
 
         <nav class="navigation">
           <ul class="menu">
@@ -48,11 +46,13 @@
             <li><a href="./#rules" class="menu__link">Правила</a></li>
             <li><a class="menu__link" data-popup-open="faq">FAQ</a></li>
             <li class="header__buttons">
-              <button class="button button--small" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
+              <button class="button button--small delete-in-tablet" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
               <button class="login-btn" data-popup-open="login"><span>Вход</span></button>
             </li>
           </ul>
         </nav>
+
+        <button class="button button--small show-in-tablet" data-popup-open="cheque"><span>Зарегистрировать чек</span></button>
 
         <button class="burger">
           <span>Меню бургер</span>
@@ -66,7 +66,12 @@
         <div class="hero">
           <div class="container">
             <h1 class="title title--h1 gold">Вкус как <br />искусство</h1>
-            <video src="./assets/img/main_animation.webm" autoplay muted loop playsinline class="main-animation"></video>
+            <div class="main-animation">
+              <video src="./assets/img/main_animation.mp4" autoplay muted loop playsinline></video>
+              <div class="hand sss">
+                <img src="./assets/img/hand.webp" alt="President" />
+              </div>
+            </div>
 
             <div class="timer">
               <div class="main-prize">
@@ -119,10 +124,10 @@
             <div class="rules-option left">
               <div class="rules-text">
                 <b>УГАДЫВАЙТЕ ШЕДЕВРЫ</b>
-                <p>ВЫИГРЫВАЙТЕ <br />спецприз: сертификат OZON</p>
+                <p>Участвуйте в розыгрыше <br />спецприза: сертификат OZON</p>
                 <button type="button" class="button button--red" data-popup-open="memory"><span>Играть</span></button>
               </div>
-              <img src="./assets/img/rule-image1.webp" alt="President" class="rules-option-image" />
+              <img src="./assets/img/rule-image1.webp" alt="President" class="rules-option-image top-position-in-mobil" />
             </div>
             <div class="rules-option right">
               <div class="rules-text">
@@ -534,7 +539,7 @@
         <li><a data-popup-open="callback">Обратная связь</a></li>
       </ul>
 
-      <img src="./assets/img/logo.webp" alt="President logo" class="footer-logo" />
+      <img src="./assets/img/logo-footer.webp" alt="President logo" class="footer-logo" />
 
       <p>Срок проведения акции: С ХХ января по ХХ декабря ХХХХ</p>
     </footer>
