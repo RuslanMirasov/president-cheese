@@ -44,6 +44,9 @@
       background-size: 1402px 100px;
       opacity: 0.3;
       pointer-events: none;
+      @media (max-width: 767px) {
+        background-size: 980px 70px;
+      }
     }
   }
   @media (max-width: 1151px) {

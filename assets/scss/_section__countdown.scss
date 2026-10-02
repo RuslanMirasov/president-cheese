@@ -136,6 +136,38 @@
   }
 }
 
+.main-animation-wrapper {
+  display: block;
+  position: relative;
+  width: calc(100% + 38px);
+  @media (min-width: 1024px) {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-42%);
+    width: 50%;
+    height: auto;
+    .main-animation {
+      position: relative;
+    }
+  }
+  @media (min-width: 1280px) {
+    right: 0px;
+  }
+  @media (min-width: 1440px) {
+    .main-animation {
+      max-width: 100%;
+      width: 100%;
+    }
+    transform: translateY(-46%);
+    width: 55%;
+  }
+  @media (min-width: 1920px) {
+    transform: translateY(-48%);
+    width: 52%;
+  }
+}
+
 @media (min-width: 1440px) {
   .main-prize {
     .title {
